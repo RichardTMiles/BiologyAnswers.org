@@ -23,6 +23,12 @@ return [
 
         'REBUILD' => false                       // Initial Setup todo - remove this check
     ],
+    
+     'VIEW' => [
+        'VIEW' => 'Application/View/',  // This is where the MVC() function will map the HTML.PHP and HTML.HBS . See Carbonphp.com/mvc
+
+        'WRAPPER' => 'Biology/Wrapper.php',     // View::content() will produce this
+    ],
 
     'SITE' => [
         
@@ -58,34 +64,9 @@ return [
 
         'CALLBACK' => function () {         // optional variable $reset which would be true if a url is passed to startApplication()
 
-            if ($_SESSION['id'] ?? ($_SESSION['id'] = false)) {
-
-                global $user;
-
-                if (!is_array($user)) {
-                    $user = [];
-                }
-                if (!is_array($me = &$user[$_SESSION['id']])) {          // || $reset  /  but this shouldn't matter
-                    $me = [];
-                    Tables\Users::All($me, $_SESSION['id']);
-                    Tables\Followers::All($me,  $_SESSION['id']);
-                    Tables\Messages::All($me,  $_SESSION['id']);
-                }
             }
         },
     ],
-
-    /*          TODO - finish building php websockets
-    'SOCKET' => [
-        'WEBSOCKETD' => false,  // if you'd like to use web
-        'PORT' => 8888,
-        'DEV' => true,
-        'SSL' => [
-            'KEY' => '',
-            'CERT' => ''
-        ]
-    ],  */
-
 
     // ERRORS on point
     'ERROR' => [
@@ -98,11 +79,7 @@ return [
         'FULL' => true        // Generate custom stacktrace will high detail - DO NOT set to TRUE in PRODUCTION
     ],
 
-    'VIEW' => [
-        'VIEW' => 'Application/View/',  // This is where the MVC() function will map the HTML.PHP and HTML.HBS . See Carbonphp.com/mvc
-
-        'WRAPPER' => 'Biology/Wrapper.php',     // View::content() will produce this
-    ],
+  
 
 ];
 
