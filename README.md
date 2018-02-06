@@ -1,2 +1,4 @@
-# BiologyAnswers.org
-Teaching Kids How To Program Through Curiosity. Carbonphp.com
+# C6
+Build full scale MVC applications quickly.
+
+#Visit carbonphp.com for suprime documentation.
