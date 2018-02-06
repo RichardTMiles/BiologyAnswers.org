@@ -36,7 +36,7 @@ class Search extends GlobalMap
         }
 
 
-        $sql = 'SELECT ChapterNumber AS ChapNumber, SectionTitle AS SecNumber, SectionNumber AS SecTitle  FROM Sections WHERE Sections.ChapterNumber LIKE :search OR Sections.SectionTitle LIKE :search OR SectionNumber LIKE :search LIMIT 5';
+        $sql = 'SELECT ChapterNumber AS ChapNumber, SectionTitle AS SecTitle, SectionNumber AS SecNumber FROM Sections WHERE Sections.ChapterNumber LIKE :search OR Sections.SectionTitle LIKE :search OR SectionNumber LIKE :search LIMIT 5';
         $stmt = $this->db->prepare($sql);
         $stmt->bindValue(':search', "%$search%");
 

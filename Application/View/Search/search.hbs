@@ -33,8 +33,8 @@
 
                             <tbody>{{#Chapters}}
                                 <tr role="row" class="clickable-row" data-href="/Chapter/{{Number}}">
-                                    <th>{{Number}}</th>
-                                    <th>{{Title}}</th>
+                                    <th><a href="/Chapter/{{Number}}">{{Number}}</a></th>
+                                    <th><a href="/Chapter/{{Number}}">{{Title}}</a></th>
                                 </tr>{{/Chapters}}
                             </tbody>
 
@@ -78,9 +78,9 @@
                             </tfoot>
                             <tbody>{{#Section}}
                                 <tr role="row" class="clickable-row" data-href="/Section/{{ChapNumber}}/{{SecNumber}}">
-                                    <th>{{ChapNumber}}</th>
-                                    <th>{{SecNumber}}</th>
-                                    <th>{{SecTitle}}</th>
+                                    <td><a href="/Chapter/{{ChapNumber}}/">{{ChapNumber}}</a></td>
+                                    <td><a href="/Section/{{ChapNumber}}/{{SecNumber}}">{{SecNumber}}</a></td>
+                                    <td><a href="/Section/{{ChapNumber}}/{{SecNumber}}">{{SecTitle}}</a></td>
                                 </tr>{{/Section}}
                             </tbody>
                         </table>
@@ -125,11 +125,11 @@
                             </tfoot>
 
                             <tbody>{{#Question}}
-                                <tr role="row" class="clickable-row" data-href="/Question/{{CNumb}}/{{SNumb}}/{{QNumb}}">
-                                    <th>{{CNumb}}</th>
-                                    <th>{{SNumb}}</th>
-                                    <th>{{QNumb}}</th>
-                                    <th>{{Q}}</th>
+                                <tr role="row">
+                                    <td><a href="/Chapter/{{CNumb}}">{{CNumb}}</a></td>
+                                    <td><a href="/Section/{{CNumb}}/{{SNumb}}/">{{SNumb}}</td>
+                                    <td><a href="/Question/{{CNumb}}/{{SNumb}}/{{QNumb}}">{{QNumb}}</td>
+                                    <td><a href="/Question/{{CNumb}}/{{SNumb}}/{{QNumb}}">{{Q}}</td>
                                 </tr>{{/Question}}
                             </tbody>
 

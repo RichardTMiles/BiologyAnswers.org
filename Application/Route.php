@@ -62,6 +62,9 @@ $url = new class extends Route
 
 };
 
+
+
+
 if (AJAX && (string)$url->structure($url->events())->match('Search/{input}','Search', 'search')) {
         return true;
 }
@@ -75,16 +78,10 @@ if ((string)$url->match('Home', 'Biology/Home.php')) {
 
 $url->structure($url->MVC());
 
-if ((string)$url->match('Chapters', 'Biology', 'Chapters') ||
+return ((string)$url->match('Chapters', 'Biology', 'Chapters') ||
     (string)$url->match('Chapter/{number}/', 'Biology', 'Chapter') ||
     (string)$url->match('Section/{chapter}/{section}/', 'Biology', 'Section') ||
-    (string)$url->match('Question/{chapter}/{section}/{question}/', 'Biology', 'Question')) {
-    return true;
-}
-
-
-
-
+    (string)$url->match('Question/{chapter}/{section}/{question}/', 'Biology', 'Question'));
 
 
 /*

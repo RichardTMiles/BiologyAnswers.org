@@ -158,14 +158,13 @@
                                 $(colorpicker).colorpicker());
 
                         //-- PJAX-->
-                        $.fn.CarbonJS("<?=SITE . APP_VIEW?>AdminLTE/Demo/demo.js", () =>
-                            $.fn.CarbonJS("<?=  SITE . COMPOSER . 'bower-asset/jquery-pjax/jquery.pjax.js' ?>", () =>
-                                $.fn.CarbonJS("<?=  SITE . COMPOSER . 'bower-asset/mustache.js/mustache.js' ?>", () =>
-                                    $.fn.CarbonJS("<?=  SITE . COMPOSER . 'richardtmiles/carbonphp/Helpers/Carbon.js'?>", () => {
-                                        CarbonJS('#pjax-content', '', false)
-                                        //-- Activate Left Sidebar Tree Menu
-                                        $('.sidebar-menu').tree()
-                                    }))))
+                        $.fn.CarbonJS("<?=  SITE . COMPOSER . 'bower-asset/jquery-pjax/jquery.pjax.js' ?>", () =>
+                            $.fn.CarbonJS("<?=  SITE . COMPOSER . 'bower-asset/mustache.js/mustache.js' ?>", () =>
+                                $.fn.CarbonJS("<?=  SITE . COMPOSER . 'richardtmiles/carbonphp/Helpers/Carbon.js'?>", () => {
+                                    CarbonJS('#pjax-content', '', false)
+                                    //-- Activate Left Sidebar Tree Menu
+                                    $('.sidebar-menu').tree()
+                                })));
                         // <!--?=($_SESSION['id'] ?? false) ? 'wss://stats.coach:8888/' : null?-->
 
 
