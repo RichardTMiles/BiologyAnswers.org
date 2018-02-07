@@ -7,10 +7,12 @@
       <sourceFolder url="file://$MODULE_DIR$/Application/Model" isTestSource="false" packagePrefix="Model\" />
       <sourceFolder url="file://$MODULE_DIR$/Application/Controller" isTestSource="false" packagePrefix="Controller\" />
       <sourceFolder url="file://$MODULE_DIR$/Application/Tables" isTestSource="false" packagePrefix="Tables\" />
-      <sourceFolder url="file://$MODULE_DIR$/Application/Config" isTestSource="false" />
       <excludeFolder url="file://$MODULE_DIR$/Data/Vendors/almasaeed2010/adminlte" />
       <excludeFolder url="file://$MODULE_DIR$/Data/Vendors/bower-asset/jquery" />
       <excludeFolder url="file://$MODULE_DIR$/Data/Vendors/bower-asset/jquery-backstretch" />
+      <excludeFolder url="file://$MODULE_DIR$/Data/Vendors/bower-asset/jquery-form" />
+      <excludeFolder url="file://$MODULE_DIR$/Data/Vendors/bower-asset/jquery-pjax" />
+      <excludeFolder url="file://$MODULE_DIR$/Data/Vendors/bower-asset/mustache.js" />
       <excludeFolder url="file://$MODULE_DIR$/Data/Vendors/composer" />
       <excludeFolder url="file://$MODULE_DIR$/Data/Vendors/facebook/graph-sdk" />
       <excludeFolder url="file://$MODULE_DIR$/Data/Vendors/firebase/php-jwt" />
@@ -48,6 +50,9 @@
           <root url="file://$MODULE_DIR$/Data/Vendors/almasaeed2010/adminlte" />
           <root url="file://$MODULE_DIR$/Data/Vendors/bower-asset/jquery" />
           <root url="file://$MODULE_DIR$/Data/Vendors/bower-asset/jquery-backstretch" />
+          <root url="file://$MODULE_DIR$/Data/Vendors/bower-asset/jquery-form" />
+          <root url="file://$MODULE_DIR$/Data/Vendors/bower-asset/jquery-pjax" />
+          <root url="file://$MODULE_DIR$/Data/Vendors/bower-asset/mustache.js" />
           <root url="file://$MODULE_DIR$/Data/Vendors/composer" />
           <root url="file://$MODULE_DIR$/Data/Vendors/facebook/graph-sdk" />
           <root url="file://$MODULE_DIR$/Data/Vendors/firebase/php-jwt" />
@@ -82,6 +87,9 @@
           <root url="file://$MODULE_DIR$/Data/Vendors/almasaeed2010/adminlte" />
           <root url="file://$MODULE_DIR$/Data/Vendors/bower-asset/jquery" />
           <root url="file://$MODULE_DIR$/Data/Vendors/bower-asset/jquery-backstretch" />
+          <root url="file://$MODULE_DIR$/Data/Vendors/bower-asset/jquery-form" />
+          <root url="file://$MODULE_DIR$/Data/Vendors/bower-asset/jquery-pjax" />
+          <root url="file://$MODULE_DIR$/Data/Vendors/bower-asset/mustache.js" />
           <root url="file://$MODULE_DIR$/Data/Vendors/composer" />
           <root url="file://$MODULE_DIR$/Data/Vendors/facebook/graph-sdk" />
           <root url="file://$MODULE_DIR$/Data/Vendors/firebase/php-jwt" />

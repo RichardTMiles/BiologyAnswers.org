@@ -65,10 +65,9 @@ $url = new class extends Route
 
 
 
-if (AJAX && (string)$url->structure($url->events())->match('Search/{input}','Search', 'search')) {
+if ((AJAX || SOCKET) && (string)$url->structure($url->events())->match('Search/{input}','Search', 'search')) {
         return true;
 }
-
 
 $url->structure($url->wrap());
 

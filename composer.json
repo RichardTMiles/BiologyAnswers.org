@@ -33,6 +33,9 @@
     "richardtmiles/carbonphp": "dev-master",
     "almasaeed2010/adminlte": "^2.4",
     "bower-asset/jquery-backstretch": "^2.1",
+    "bower-asset/jquery-form": "dev-master",
+    "bower-asset/jquery-pjax": "dev-master",
+    "bower-asset/mustache.js": "dev-master",
     "google/apiclient": "^2.0",
     "facebook/graph-sdk": "^5.5",
     "mustache/mustache": "^2.12"

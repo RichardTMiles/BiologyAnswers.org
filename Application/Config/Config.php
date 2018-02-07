@@ -8,32 +8,32 @@
 
 // Template
 const COMPOSER = 'Data' . DS . 'Vendors' . DS;
-const TEMPLATE =  COMPOSER . 'almasaeed2010' . DS . 'adminlte' . DS;
+const TEMPLATE = COMPOSER . 'almasaeed2010' . DS . 'adminlte' . DS;
 
 return [
-    'DATABASE' => [
+    'DATABASE' => [   // 104.155.134.136
 
         'DB_DSN' => 'mysql:host=127.0.0.1;dbname=BiologyAnswers',      // Host and Database get put here (may need to change ip)
 
         'DB_USER' => 'root',                // User
 
-        'DB_PASS' =>  'Huskies!99',          // Password
+        'DB_PASS' => 'Huskies!99',          // Password
 
         'DB_BUILD' => SERVER_ROOT . 'Application/Config/buildDatabase.php',
 
         'REBUILD' => false                       // Initial Setup todo - remove this check
     ],
-    
-     'VIEW' => [
+
+    'VIEW' => [
         'VIEW' => 'Application/View/',  // This is where the MVC() function will map the HTML.PHP and HTML.HBS . See Carbonphp.com/mvc
 
         'WRAPPER' => 'Biology/Wrapper.php',     // View::content() will produce this
     ],
 
     'SITE' => [
-        
-         // If youre trying to run this on your server, youll need to change the domain directly below 
-    
+
+        // If youre trying to run this on your server, youll need to change the domain directly below
+
         'URL' => 'biologyanswers.org',    // Evaluated and if not the accurate redirect. Local php server okay. Remove for any domain
 
         'ROOT' => SERVER_ROOT,     // This was defined in our ../index.php
@@ -57,29 +57,35 @@ return [
         'HTTP' => true   // I assume that HTTP is okay by default
     ],
 
+    'SOCKET' => [
+        'PORT' => 8888,
+        'DEV' => false,
+        'SSL' => [
+            'KEY' => '',
+            'CERT' => ''
+        ]
+    ],
     'SESSION' => [
         'REMOTE' => true,             // Store the session in the SQL database
 
-        'SERIALIZE' => [ 'user' ],           // These global variables will be stored between session
+        'SERIALIZE' => ['user'],           // These global variables will be stored between session
 
         'CALLBACK' => function () {         // optional variable $reset which would be true if a url is passed to startApplication()
 
-            }
         },
     ],
 
     // ERRORS on point
     'ERROR' => [
-        'LEVEL' =>  E_ALL | E_STRICT,  // php ini level
+        'LEVEL' => E_ALL | E_STRICT,  // php ini level
 
-        'STORE' =>  true,      // Database if specified and / or File 'LOCATION' in your system
+        'STORE' => true,      // Database if specified and / or File 'LOCATION' in your system
 
-        'SHOW' =>  true,       // Show errors on browser
+        'SHOW' => true,       // Show errors on browser
 
         'FULL' => true        // Generate custom stacktrace will high detail - DO NOT set to TRUE in PRODUCTION
     ],
 
-  
 
 ];
 

@@ -37,7 +37,7 @@ $logged_in = $_SESSION['id'] ?? false;
                 <div class="navbar-custom-menu">
                     <ul class="nav navbar-nav">
                         <!-- Star Me-->
-                        <li><a href="https://github.com/RichardTMiles/BiologyAnswers.org" target="_blank">View The Source Code<span class="sr-only">(current)</span></a></li>
+                        <li><a href="https://github.com/RichardTMiles/BiologyAnswers.org" target="_blank">Source Code<span class="sr-only">(current)</span></a></li>
                         <!-- /.github -->
                     </ul>
                 </div>

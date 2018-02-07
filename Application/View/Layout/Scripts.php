@@ -29,11 +29,20 @@
         $.fn.CarbonJS("<?=  SITE . TEMPLATE . 'bower_components/bootstrap/dist/js/bootstrap.min.js' ?>", () =>
             //-- Slim Scroll -->
             $.fn.CarbonJS("<?=  SITE . TEMPLATE . 'bower_components/jquery-slimscroll/jquery.slimscroll.min.js' ?>", () =>
-
                 //-- Fastclick -->
                 $.fn.CarbonJS("<?= SITE . TEMPLATE . 'bower_components/fastclick/lib/fastclick.js' ?>", () =>
                     //-- Admin LTE -->
                     $.fn.CarbonJS("<?=  SITE . TEMPLATE . 'dist/js/adminlte.min.js' ?>", () => {
+
+                        <!-- Global site tag (gtag.js) - Google Analytics -->
+                        window.dataLayer = window.dataLayer || [];
+                        function gtag() {
+                            dataLayer.push(arguments);
+                        }
+                        gtag('js', new Date());
+                        gtag('config', 'UA-90672794-1');
+                        $.fn.CarbonJS("https://www.googletagmanager.com/gtag/js?id=UA-90672794-1");
+
 
                         //-- AJAX Pace -->
                         $.fn.CarbonJS("<?=  SITE . TEMPLATE . 'bower_components/PACE/pace.js' ?>", () => $(document).ajaxStart(() => Pace.restart()));
@@ -161,7 +170,7 @@
                         $.fn.CarbonJS("<?=  SITE . COMPOSER . 'bower-asset/jquery-pjax/jquery.pjax.js' ?>", () =>
                             $.fn.CarbonJS("<?=  SITE . COMPOSER . 'bower-asset/mustache.js/mustache.js' ?>", () =>
                                 $.fn.CarbonJS("<?=  SITE . COMPOSER . 'richardtmiles/carbonphp/Helpers/Carbon.js'?>", () => {
-                                    CarbonJS('#pjax-content', '', false)
+                                    CarbonJS('#pjax-content', 'ws://127.0.0.1:8888/', false);
                                     //-- Activate Left Sidebar Tree Menu
                                     $('.sidebar-menu').tree()
                                 })));
@@ -172,14 +181,6 @@
 
     });
 
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    window.dataLayer = window.dataLayer || [];
 
-    function gtag() {
-        dataLayer.push(arguments);
-    }
 
-    gtag('js', new Date());
-
-    gtag('config', 'UA-100885582-1');
 </script>

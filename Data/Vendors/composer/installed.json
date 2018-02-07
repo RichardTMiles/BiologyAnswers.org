@@ -1774,5 +1774,119 @@
             "pipes",
             "sockets"
         ]
+    },
+    {
+        "name": "bower-asset/jquery-form",
+        "version": "dev-master",
+        "version_normalized": "9999999-dev",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/jquery-form/form.git",
+            "reference": "8281f8909563601f6a8f8fb5e1ec57715bd7c151"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/jquery-form/form/zipball/8281f8909563601f6a8f8fb5e1ec57715bd7c151",
+            "reference": "8281f8909563601f6a8f8fb5e1ec57715bd7c151",
+            "shasum": ""
+        },
+        "require": {
+            "bower-asset/jquery": ">=1.7.2"
+        },
+        "time": "2017-08-21T17:27:29+00:00",
+        "type": "bower-asset-library",
+        "extra": {
+            "bower-asset-main": "src/jquery.form.js",
+            "bower-asset-ignore": [
+                "README.md",
+                "composer.json",
+                "package.json"
+            ]
+        },
+        "installation-source": "source",
+        "license": [
+            "(LGPL-2.1+ OR MIT)"
+        ],
+        "description": "The jQuery Form Plugin allows you to easily and unobtrusively upgrade HTML forms to use AJAX.",
+        "keywords": [
+            "ajax",
+            "form",
+            "html-form",
+            "jquery",
+            "jquery-form",
+            "jquery-plugin",
+            "json",
+            "json-form"
+        ]
+    },
+    {
+        "name": "bower-asset/jquery-pjax",
+        "version": "dev-master",
+        "version_normalized": "9999999-dev",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/defunkt/jquery-pjax.git",
+            "reference": "153262eda33e31119eabb97cd5f14365580a3b35"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/defunkt/jquery-pjax/zipball/153262eda33e31119eabb97cd5f14365580a3b35",
+            "reference": "153262eda33e31119eabb97cd5f14365580a3b35",
+            "shasum": ""
+        },
+        "require": {
+            "bower-asset/jquery": ">=1.8"
+        },
+        "time": "2017-05-23T11:23:11+00:00",
+        "type": "bower-asset-library",
+        "extra": {
+            "bower-asset-main": "./jquery.pjax.js",
+            "bower-asset-ignore": [
+                ".travis.yml",
+                "Gemfile",
+                "Gemfile.lock",
+                "CONTRIBUTING.md",
+                "vendor/",
+                "script/",
+                "test/"
+            ]
+        },
+        "installation-source": "source"
+    },
+    {
+        "name": "bower-asset/mustache.js",
+        "version": "dev-master",
+        "version_normalized": "9999999-dev",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/janl/mustache.js.git",
+            "reference": "b283da5c8c26dbf78c357a1f67bfed26d18f5e32"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/janl/mustache.js/zipball/b283da5c8c26dbf78c357a1f67bfed26d18f5e32",
+            "reference": "b283da5c8c26dbf78c357a1f67bfed26d18f5e32",
+            "shasum": ""
+        },
+        "time": "2017-08-26T16:14:01+00:00",
+        "type": "bower-asset-library",
+        "extra": {
+            "bower-asset-main": "mustache.js",
+            "bower-asset-ignore": [
+                "**/.*",
+                "test"
+            ]
+        },
+        "installation-source": "source",
+        "license": [
+            "MIT"
+        ],
+        "description": "Logic-less {{mustache}} templates with JavaScript",
+        "keywords": [
+            "ejs",
+            "mustache",
+            "template",
+            "templates"
+        ]
     }
 ]
