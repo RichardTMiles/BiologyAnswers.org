@@ -23,7 +23,7 @@
         $.fn.CarbonJS = (sc, cb) => (!JSLoaded.has(sc) ? loadJS(sc, cb) : cb());
 
         //-- Jquery Form -->
-        $.fn.CarbonJS('<?=  SITE . COMPOSER . 'bower-asset/jquery-form/src/jquery.form.js'?>');
+        $.fn.CarbonJS('<?=  SITE . APP_VIEW . 'bower-asset/jquery-form/src/jquery.form.js'?>');
 
         //-- Bootstrap -->
         $.fn.CarbonJS("<?=  SITE . TEMPLATE . 'bower_components/bootstrap/dist/js/bootstrap.min.js' ?>", () =>
@@ -52,7 +52,7 @@
                                 $(selector).length ? $(selector).backstretch(img) : $.backstretch(img));
 
 
-                        $.fn.CarbonJS("<?=  SITE . COMPOSER . 'bower-asset/jquery-backstretch/jquery.backstretch.min.js' ?>", () => {
+                        $.fn.CarbonJS("<?=  SITE . APP_VIEW . 'bower-asset/jquery-backstretch/jquery.backstretch.min.js' ?>", () => {
                             $.backstretch('<?=SITE . APP_VIEW?>Img/Carbon-green.png');
                         });
 
@@ -167,10 +167,10 @@
                                 $(colorpicker).colorpicker());
 
                         //-- PJAX-->
-                        $.fn.CarbonJS("<?=  SITE . COMPOSER . 'bower-asset/jquery-pjax/jquery.pjax.js' ?>", () =>
-                            $.fn.CarbonJS("<?=  SITE . COMPOSER . 'bower-asset/mustache.js/mustache.js' ?>", () =>
+                        $.fn.CarbonJS("<?=  SITE . APP_VIEW . 'bower-asset/jquery-pjax/jquery.pjax.js' ?>", () =>
+                            $.fn.CarbonJS("<?=  SITE . APP_VIEW . 'bower-asset/mustache.js/mustache.js' ?>", () =>
                                 $.fn.CarbonJS("<?=  SITE . COMPOSER . 'richardtmiles/carbonphp/Helpers/Carbon.js'?>", () => {
-                                    CarbonJS('#pjax-content', 'ws://127.0.0.1:8888/', false);
+                                    CarbonJS('#pjax-content', '', false); //'wss://biologyanswers.org:8888/'
                                     //-- Activate Left Sidebar Tree Menu
                                     $('.sidebar-menu').tree()
                                 })));

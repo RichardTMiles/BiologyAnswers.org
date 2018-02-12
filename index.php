@@ -11,7 +11,7 @@ if (false === (include SERVER_ROOT . 'Data/Vendors/autoload.php')) {     // Load
     print '<h1>Loading Composer Failed. See Carbonphp.com for documentation.</h1>' and die;     // Composer autoload
 }
 
-$app = new Carbon\Carbon(include SERVER_ROOT . 'Application/Config/Config.php');
+$app = new Carbon\Carbon('Application/Config/Config.php');
 
 /** At one point I returned the invocation of $app to show that
  * the application will not exit on completion, but rather return

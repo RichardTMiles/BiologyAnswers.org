@@ -16,7 +16,6 @@ class Search extends GlobalMap
     {
         global $result, $json;
 
-
         $json = ['widget' => '#pjax-content'];
 
         ######################### Team Search
@@ -30,11 +29,9 @@ class Search extends GlobalMap
 
         $result['Chapters'] = $stmt->fetchAll();
 
-
         if (array_key_exists('team_id', $result)) {
             $result = [$result];
         }
-
 
         $sql = 'SELECT ChapterNumber AS ChapNumber, SectionTitle AS SecTitle, SectionNumber AS SecNumber FROM Sections WHERE Sections.ChapterNumber LIKE :search OR Sections.SectionTitle LIKE :search OR SectionNumber LIKE :search LIMIT 5';
         $stmt = $this->db->prepare($sql);

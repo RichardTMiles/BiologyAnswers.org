@@ -13,11 +13,11 @@ const TEMPLATE = COMPOSER . 'almasaeed2010' . DS . 'adminlte' . DS;
 return [
     'DATABASE' => [   // 104.155.134.136
 
-        'DB_DSN' => 'mysql:host=127.0.0.1;dbname=BiologyAnswers',      // Host and Database get put here (may need to change ip)
+        'DB_DSN' => APP_LOCAL ? 'mysql:host=127.0.0.1;dbname=BiologyAnswers;' : 'mysql:host=35.224.229.250;dbname=BiologyAnswers;',      // Host and Database get put here
 
         'DB_USER' => 'root',                // User
 
-        'DB_PASS' => 'Huskies!99',          // Password
+        'DB_PASS' => 'goldteamrules',          // Password
 
         'DB_BUILD' => SERVER_ROOT . 'Application/Config/buildDatabase.php',
 

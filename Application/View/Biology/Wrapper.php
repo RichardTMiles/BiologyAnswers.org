@@ -86,12 +86,11 @@ $logged_in = $_SESSION['id'] ?? false;
         <!-- /.container -->
     </div>
     <!-- /.content-wrapper -->
-    <footer class="main-footer" style="">
+    <footer class="main-footer bg-black" style="border-top: 0">
         <div class="container">
             <div class="pull-right hidden-xs">
                 <a href="<?= SITE ?>Privacy/">Privacy Policy</a> <b>Version</b> <?= SITE_VERSION ?>
             </div>
-            <strong>Copyright &copy; 2014-2017 <a href="http://Miles.Systems">Richard Miles</a>.</strong>
             <!--script type="text/javascript" src="https://cdn.ywxi.net/js/1.js" async></script-->
         </div>
         <!-- /.container -->
