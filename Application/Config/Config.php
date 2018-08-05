@@ -24,6 +24,7 @@ return [
         'REBUILD' => false                       // Initial Setup todo - remove this check
     ],
 
+
     'VIEW' => [
         'VIEW' => 'Application/View/',  // This is where the MVC() function will map the HTML.PHP and HTML.HBS . See Carbonphp.com/mvc
 
@@ -32,7 +33,13 @@ return [
 
     'SITE' => [
 
-        // If youre trying to run this on your server, youll need to change the domain directly below
+        'CACHE_CONTROL' => [
+            'ico|pdf|flv' => 'Cache-Control: max-age=29030400, public',
+            'jpg|jpeg|png|gif|swf|xml|txt|css|js|woff2|tff' => 'Cache-Control: max-age=604800, public',
+            'html|htm|php|hbs' => 'Cache-Control: max-age=0, private, public',
+        ],
+
+        // If youre trying to run this on your server, you'll need to change the domain directly below
 
         'URL' => 'biologyanswers.org',    // Evaluated and if not the accurate redirect. Local php server okay. Remove for any domain
 
@@ -52,7 +59,7 @@ return [
 
         'REPLY_EMAIL' => 'support@carbonphp.com',
 
-        'BOOTSTRAP' => 'Application/Route.php',     // This file is executed when the startApplication() function is called
+        'BOOTSTRAP' => 'Application/BiologyAnswers.php',     // This file is executed when the startApplication() function is called
 
         'HTTP' => true   // I assume that HTTP is okay by default
     ],

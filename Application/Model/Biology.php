@@ -9,7 +9,7 @@
 namespace Model;
 
 
-use Carbon\Error\PublicAlert;
+use CarbonPHP\Error\PublicAlert;
 
 class Biology extends GlobalMap
 {

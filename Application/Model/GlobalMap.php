@@ -52,8 +52,8 @@
 
 namespace Model;
 
-use Carbon\Entities;           // /Data/Vendors/richardtmiles/carbonphp/Structure/Entities.php   <- that's deep..
-use Carbon\Helpers\Pipe;       // <-- that's fun
+use CarbonPHP\Entities;           // /Data/Vendors/richardtmiles/carbonphp/Structure/Entities.php   <- that's deep..
+use CarbonPHP\Helpers\Pipe;       // <-- that's fun
 
 abstract class GlobalMap extends Entities
 {

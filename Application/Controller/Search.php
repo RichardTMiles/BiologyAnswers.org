@@ -8,12 +8,14 @@
 
 namespace Controller;
 
-use Carbon\Request;
+use CarbonPHP\Request;
 
 
 class Search extends Request
 {
     public function search($search){
-        return $this->set($search)->noHTML(true);
+        global $json;
+
+        return $json['verify'] = $this->set($search)->value();
     }
 }
