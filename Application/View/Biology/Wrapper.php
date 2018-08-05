@@ -221,7 +221,7 @@ $logged_in = $_SESSION['id'] ?? false;
 <script src="/node_modules/mustache/mustache.js"></script>
 <script src="/vendor/richardtmiles/carbonphp/helpers/Carbon.js"></script>
 <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-90672794-1"></script>
 <script>
     (adsbygoogle = window.adsbygoogle || []).push({
         google_ad_client: "ca-pub-7402031087678981",
@@ -284,14 +284,10 @@ $logged_in = $_SESSION['id'] ?? false;
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     window.dataLayer = window.dataLayer || [];
-
-    function gtag() {
-        dataLayer.push(arguments);
-    }
-
+    function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
 
-    gtag('config', 'UA-100885582-1');
+    gtag('config', 'UA-90672794-1');
 </script>
 </body>
 </html>
