@@ -27,25 +27,25 @@ If you find yourself scratching your head when reading these instructions feel f
 
 4) Using the following command, download this souce repositories code in terminal.
 
->> git clone https://github.com/RichardTMiles/BiologyAnswers.org.git
+        git clone https://github.com/RichardTMiles/BiologyAnswers.org.git
 
 5) Change directories to move into the BiologyAnswers.org folder just downloaded.
-
->> cd BiologyAnswers.org
+        
+        cd BiologyAnswers.org
 
 6) Run the following to automatically download the rest of the code dependencies. 
-
->> composer install
->> npm install
+        
+        composer install
+        npm install
 
 7) You will need to edit the "/Application/Config/Config.php" for you MySQL database credentials. The scheme can be left set to 'BiologyAnswers', as it will be created and populated for you if not existing. This is all managed with CarbonPHP, a php framework I built for hella speed, installed with composer. 
         
-        >> 'DB_USER' => 'root',                
-        >> 'DB_PASS' => ''
+        'DB_USER' => 'root',                
+        'DB_PASS' => ''
       
 8) Using PHP's built in server, we can now run our application!
 
->> php -S localhost:1777 index.php
+        php -S localhost:1777 index.php
 
 9) Goto http://localhost:1777/ in your browser to see the gold.
 
