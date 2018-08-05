@@ -25,7 +25,7 @@ If you find yourself scratching your head when reading these instructions feel f
 
 3) Ensure you have the required dependenncies listed above.
 
-4) Download this souce code in terminal.
+4) Using the following command, download this souce repositories code in terminal.
 
 >> git clone https://github.com/RichardTMiles/BiologyAnswers.org.git
 
