@@ -8,6 +8,7 @@ You can check to see what versions you have installed by typing the folling into
 
         php -v
         node -v
+        composer -v
         mysql --version
         git --version
 
