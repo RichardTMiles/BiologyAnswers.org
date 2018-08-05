@@ -47,89 +47,23 @@
       <library name="PHP" type="php">
         <CLASSES>
           <root url="file://$APPLICATION_HOME_DIR$/bin" />
-          <root url="file://$MODULE_DIR$/Data/Vendors/almasaeed2010/adminlte" />
-          <root url="file://$MODULE_DIR$/Data/Vendors/bower-asset/jquery" />
-          <root url="file://$MODULE_DIR$/Data/Vendors/bower-asset/jquery-backstretch" />
-          <root url="file://$MODULE_DIR$/Data/Vendors/bower-asset/jquery-form" />
-          <root url="file://$MODULE_DIR$/Data/Vendors/bower-asset/jquery-pjax" />
-          <root url="file://$MODULE_DIR$/Data/Vendors/bower-asset/mustache.js" />
-          <root url="file://$MODULE_DIR$/Data/Vendors/composer" />
-          <root url="file://$MODULE_DIR$/Data/Vendors/facebook/graph-sdk" />
-          <root url="file://$MODULE_DIR$/Data/Vendors/firebase/php-jwt" />
-          <root url="file://$MODULE_DIR$/Data/Vendors/google/apiclient" />
-          <root url="file://$MODULE_DIR$/Data/Vendors/google/apiclient-services" />
-          <root url="file://$MODULE_DIR$/Data/Vendors/google/auth" />
-          <root url="file://$MODULE_DIR$/Data/Vendors/google/cloud" />
-          <root url="file://$MODULE_DIR$/Data/Vendors/google/cloud-tools" />
-          <root url="file://$MODULE_DIR$/Data/Vendors/guzzlehttp/guzzle" />
-          <root url="file://$MODULE_DIR$/Data/Vendors/guzzlehttp/promises" />
-          <root url="file://$MODULE_DIR$/Data/Vendors/guzzlehttp/psr7" />
-          <root url="file://$MODULE_DIR$/Data/Vendors/monolog/monolog" />
-          <root url="file://$MODULE_DIR$/Data/Vendors/mustache/mustache" />
-          <root url="file://$MODULE_DIR$/Data/Vendors/phpseclib/phpseclib" />
-          <root url="file://$MODULE_DIR$/Data/Vendors/psr/cache" />
-          <root url="file://$MODULE_DIR$/Data/Vendors/psr/http-message" />
-          <root url="file://$MODULE_DIR$/Data/Vendors/psr/log" />
-          <root url="file://$MODULE_DIR$/Data/Vendors/richardtmiles/carbonphp" />
-          <root url="file://$MODULE_DIR$/Data/Vendors/rize/uri-template" />
-          <root url="file://$MODULE_DIR$/Data/Vendors/symfony/browser-kit" />
-          <root url="file://$MODULE_DIR$/Data/Vendors/symfony/console" />
-          <root url="file://$MODULE_DIR$/Data/Vendors/symfony/debug" />
-          <root url="file://$MODULE_DIR$/Data/Vendors/symfony/dom-crawler" />
-          <root url="file://$MODULE_DIR$/Data/Vendors/symfony/filesystem" />
-          <root url="file://$MODULE_DIR$/Data/Vendors/symfony/polyfill-mbstring" />
-          <root url="file://$MODULE_DIR$/Data/Vendors/symfony/process" />
-          <root url="file://$MODULE_DIR$/Data/Vendors/twig/twig" />
         </CLASSES>
         <JAVADOC />
         <SOURCES>
           <root url="file://$APPLICATION_HOME_DIR$/bin" />
-          <root url="file://$MODULE_DIR$/Data/Vendors/almasaeed2010/adminlte" />
-          <root url="file://$MODULE_DIR$/Data/Vendors/bower-asset/jquery" />
-          <root url="file://$MODULE_DIR$/Data/Vendors/bower-asset/jquery-backstretch" />
-          <root url="file://$MODULE_DIR$/Data/Vendors/bower-asset/jquery-form" />
-          <root url="file://$MODULE_DIR$/Data/Vendors/bower-asset/jquery-pjax" />
-          <root url="file://$MODULE_DIR$/Data/Vendors/bower-asset/mustache.js" />
-          <root url="file://$MODULE_DIR$/Data/Vendors/composer" />
-          <root url="file://$MODULE_DIR$/Data/Vendors/facebook/graph-sdk" />
-          <root url="file://$MODULE_DIR$/Data/Vendors/firebase/php-jwt" />
-          <root url="file://$MODULE_DIR$/Data/Vendors/google/apiclient" />
-          <root url="file://$MODULE_DIR$/Data/Vendors/google/apiclient-services" />
-          <root url="file://$MODULE_DIR$/Data/Vendors/google/auth" />
-          <root url="file://$MODULE_DIR$/Data/Vendors/google/cloud" />
-          <root url="file://$MODULE_DIR$/Data/Vendors/google/cloud-tools" />
-          <root url="file://$MODULE_DIR$/Data/Vendors/guzzlehttp/guzzle" />
-          <root url="file://$MODULE_DIR$/Data/Vendors/guzzlehttp/promises" />
-          <root url="file://$MODULE_DIR$/Data/Vendors/guzzlehttp/psr7" />
-          <root url="file://$MODULE_DIR$/Data/Vendors/monolog/monolog" />
-          <root url="file://$MODULE_DIR$/Data/Vendors/mustache/mustache" />
-          <root url="file://$MODULE_DIR$/Data/Vendors/phpseclib/phpseclib" />
-          <root url="file://$MODULE_DIR$/Data/Vendors/psr/cache" />
-          <root url="file://$MODULE_DIR$/Data/Vendors/psr/http-message" />
-          <root url="file://$MODULE_DIR$/Data/Vendors/psr/log" />
-          <root url="file://$MODULE_DIR$/Data/Vendors/richardtmiles/carbonphp" />
-          <root url="file://$MODULE_DIR$/Data/Vendors/rize/uri-template" />
-          <root url="file://$MODULE_DIR$/Data/Vendors/symfony/browser-kit" />
-          <root url="file://$MODULE_DIR$/Data/Vendors/symfony/console" />
-          <root url="file://$MODULE_DIR$/Data/Vendors/symfony/debug" />
-          <root url="file://$MODULE_DIR$/Data/Vendors/symfony/dom-crawler" />
-          <root url="file://$MODULE_DIR$/Data/Vendors/symfony/filesystem" />
-          <root url="file://$MODULE_DIR$/Data/Vendors/symfony/polyfill-mbstring" />
-          <root url="file://$MODULE_DIR$/Data/Vendors/symfony/process" />
-          <root url="file://$MODULE_DIR$/Data/Vendors/twig/twig" />
         </SOURCES>
       </library>
     </orderEntry>
     <orderEntry type="module-library">
       <library name="PHARS">
         <CLASSES>
-          <root url="phar://$MODULE_DIR$/Data/Vendors/twig/twig/test/Twig/Tests/Loader/Fixtures/phar/phar-sample.phar/" />
-          <root url="phar://$MODULE_DIR$/Data/Vendors/richardtmiles/carbonphp/composer.phar/" />
+          <root url="phar://$MODULE_DIR$/vendor/richardtmiles/carbonphp/composer.phar/" />
+          <root url="phar://$MODULE_DIR$/vendor/twig/twig/test/Twig/Tests/Loader/Fixtures/phar/phar-sample.phar/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES>
-          <root url="phar://$MODULE_DIR$/Data/Vendors/twig/twig/test/Twig/Tests/Loader/Fixtures/phar/phar-sample.phar/" />
-          <root url="phar://$MODULE_DIR$/Data/Vendors/richardtmiles/carbonphp/composer.phar/" />
+          <root url="phar://$MODULE_DIR$/vendor/richardtmiles/carbonphp/composer.phar/" />
+          <root url="phar://$MODULE_DIR$/vendor/twig/twig/test/Twig/Tests/Loader/Fixtures/phar/phar-sample.phar/" />
         </SOURCES>
       </library>
     </orderEntry>

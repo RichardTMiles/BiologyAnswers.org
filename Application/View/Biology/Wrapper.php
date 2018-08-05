@@ -27,7 +27,7 @@ $logged_in = $_SESSION['id'] ?? false;
                     </ul>
                     <form class="navbar-form navbar-left" role="search">
                         <div class="form-group">
-                            <input onkeyup="$.fn.startApplication('<?=SITE . 'Search/'?>' + this.value)" type="text" class="form-control"
+                            <input onkeyup="this.value.length && carbon.start('/Search/' + this.value)" type="text" class="form-control"
                                    id="navbar-search-input" placeholder="Search" name="Search">
                         </div>
                     </form>
@@ -77,7 +77,7 @@ $logged_in = $_SESSION['id'] ?? false;
         <!-- content -->
         <div class="col-md-offset-1 col-md-10">
             <div id="pjax-content">
-                <?= \Carbon\View::$bufferedContent ?? '' ?>
+                <?= \CarbonPHP\View::$bufferedContent ?? '' ?>
             </div>
         </div>
         <!-- /.content -->
@@ -96,9 +96,119 @@ $logged_in = $_SESSION['id'] ?? false;
         <!-- /.container -->
     </footer>
 </div>
-<?php
-include_once SERVER_ROOT . APP_VIEW . 'Layout/Styles.php';
-include_once SERVER_ROOT . APP_VIEW . 'Layout/Scripts.php';
-?>
+<noscript id="deferred-styles">
+    <!-- REQUIRED STYLE SHEETS -->
+    <!-- Bootstrap 3.3.6 -->
+    <link rel="stylesheet" type="text/css" href="/node_modules/admin-lte/bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <!-- Theme style -->
+    <link rel="stylesheet" type="text/css" href="/node_modules/admin-lte/dist/css/AdminLTE.min.css">
+    <!-- AdminLTE Skins. Choose a skin from the css/skins
+        folder instead of downloading all of them to reduce the load. -->
+    <link rel="stylesheet" type="text/css" href="/node_modules/admin-lte/dist/css/skins/_all-skins.min.css">
+    <!-- DataTables.Bootstrap -->
+    <link rel="stylesheet" type="text/css" href="/node_modules/admin-lte/bower_components/datatables.net-bs/css/dataTables.bootstrap.min.css">
+    <!-- iCheck -->
+    <link rel="stylesheet" type="text/css" href="/node_modules/admin-lte/plugins/iCheck/all.css">
+    <!-- Color Picker -->
+    <link rel="stylesheet" type="text/css" href="/node_modules/bootstrap-colorpicker/dist/css/bootstrap-colorpicker.min.css">
+    <!-- Ionicons -->
+    <link rel="stylesheet" type="text/css" href="/node_modules/ionicons/dist/css/ionicons.min.css">
+    <!-- bootstrap slider -->
+    <link rel="stylesheet" type="text/css" href="/node_modules/bootstrap-slider/dist/css/bootstrap-slider.css">
+    <!-- Back color -->
+    <link rel="stylesheet" type="text/css" href="/node_modules/admin-lte/dist/css/skins/skin-green.css">
+    <!-- Multiple input dynamic form -->
+    <link rel="stylesheet" type="text/css" href="/node_modules/select2/dist/css/select2.min.css">
+    <!-- Morris Chart -->
+    <link rel="stylesheet" type="text/css" href="/node_modules/morris.js/morris.css">
+    <!-- ajax refresh circle spinner -->
+    <link rel="stylesheet" type="text/css" href="/node_modules/admin-lte/plugins/pace/pace.css">
+    <!-- Jquery -->
+    <link rel="stylesheet" type="text/css" href="/node_modules/jvectormap/jquery-jvectormap.css">
+    <!-- datepicker -->
+    <link rel="stylesheet" type="text/css" href="/node_modules/bootstrap-datepicker/dist/css/bootstrap-datepicker.css">
+    <!-- date-range-picker -->
+    <link rel="stylesheet" type="text/css" href="/node_modules/bootstrap-daterangepicker/daterangepicker.css">
+    <link rel="stylesheet" type="text/css" href="/node_modules/admin-lte/plugins/timepicker/bootstrap-timepicker.css">
+    <!-- Wysihtml -->
+    <link rel="stylesheet" type="text/css" href="/node_modules/admin-lte/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" type="text/css" href="/node_modules/font-awesome/css/font-awesome.min.css">
+    <!-- Full Calander -->
+    <link rel="stylesheet" type="text/css" href="/node_modules/admin-lte/bower_components/fullcalendar/dist/fullcalendar.min.css">
+
+</noscript>
+
+<script src="/node_modules/jquery/dist/jquery.min.js"></script>
+<script src="/node_modules/jquery-pjax/jquery.pjax.js"></script>
+<script src="/node_modules/mustache/mustache.js"></script>
+<script src="/vendor/richardtmiles/carbonphp/helpers/Carbon.js"></script>
+
+<script>
+    const TEMPLATE = '/node_modules/admin-lte/', APP_VIEW = '/Application/View/', COMPOSER = '/vendor/';
+
+    const carbon = new CarbonPHP();
+
+    carbon.invoke('#pjax-content'); // , 'ws://rootprerogative.com:8888/', false
+
+    //-- Jquery Form -->
+    carbon.js('/node_modules/jquery-form/src/jquery.form.js');
+
+    //-- Bootstrap -->
+    carbon.js('/node_modules/bootstrap/dist/js/bootstrap.min.js', () => {
+    //-- Slim Scroll -->
+    carbon.js('/node_modules/admin-lte/bower_components/jquery-slimscroll/jquery.slimscroll.min.js', () => {
+
+        //-- Fastclick -->
+        carbon.js('/node_modules/fastclick/lib/fastclick.js', () => {
+            //-- Admin LTE -->
+            carbon.js('/node_modules/admin-lte/dist/js/adminlte.min.js', () => {
+
+                carbon.js('/vendor/richardtmiles/carbonphp/helpers/asynchronous.js', () => {
+                    carbon.event("Carbon");
+
+                    $(document).on('pjax:complete', function () {
+                        let boxes = $(".box");
+
+                            if (!boxes.exists()) {
+                                return;
+                            }
+
+                            boxes.boxWidget({
+                                animationSpeed: 500,
+                                collapseTrigger: '[data-widget="collapse"]',
+                                removeTrigger: '[data-widget="remove"]',
+                                collapseIcon: 'fa-minus',
+                                expandIcon: 'fa-plus',
+                                removeIcon: 'fa-times'
+                            });
+                            $('#my-box-widget').boxRefresh('load');
+                        });
+
+                    $.load_backStretch('/Application/View/img/Carbon.png');
+                    $('.sidebar-menu').tree();
+                });
+
+                    //carbon.js(APP_VIEW + 'AdminLTE/Demo/demo.js');
+                    //-- AJAX Pace -->
+                    carbon.js('/node_modules/admin-lte/bower_components/PACE/pace.js', () => $(document).ajaxStart(() => Pace.restart()));
+
+                })
+            })
+        })
+    })
+
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+        dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+
+    gtag('config', 'UA-100885582-1');
+</script>
 </body>
 </html>

@@ -3,7 +3,7 @@
 namespace Model;
 
 
-use Carbon\Error\PublicAlert;
+use CarbonPHP\Error\PublicAlert;
 
 class Search extends GlobalMap
 {
@@ -16,7 +16,7 @@ class Search extends GlobalMap
     {
         global $result, $json;
 
-        $json = ['widget' => '#pjax-content'];
+        $json['widget'] = '#pjax-content';
 
         ######################### Team Search
         $sql = 'SELECT ChapterNumber AS Number, ChapterTitle AS Title FROM Chapters WHERE Chapters.ChapterNumber LIKE :search OR Chapters.ChapterTitle LIKE :search LIMIT 5';

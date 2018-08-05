@@ -8,7 +8,7 @@
  */
 
 try {
-    $db = \Carbon\Database::database();
+    $db = \CarbonPHP\Database::database();
 
     print '<h1>Creating Stats.Coach</h1>';
 
