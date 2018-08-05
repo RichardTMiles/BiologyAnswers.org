@@ -15,7 +15,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/RichardTMiles/Stats.Coach.git"
+    "url": "git+https://github.com/RichardTMiles/BiologyAnswers.org.git"
   },
   "keywords": [
     "golf"
@@ -23,7 +23,7 @@
   "author": "Richard Miles",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/RichardTMiles/Stats.Coach/issues"
+    "url": "https://github.com/RichardTMiles/BiologyAnswers.org/issues"
   },
-  "homepage": "https://github.com/RichardTMiles/Stats.Coach#readme"
+  "homepage": "https://github.com/RichardTMiles/BiologyAnswers.org#readme"
 }

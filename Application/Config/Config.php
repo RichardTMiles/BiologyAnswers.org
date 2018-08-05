@@ -53,7 +53,7 @@ return [
 
         'TITLE' => 'Biology Answers • Prentice Hall',      // Website title
 
-        'VERSION' => '5.0.0',       // Add link to semantic versioning
+        'VERSION' => '5.1.0',       // Add link to semantic versioning
 
         'SEND_EMAIL' => 'no-reply@carbonphp.com',     // I send emails to validate accounts
 
