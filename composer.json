@@ -17,7 +17,7 @@
   "authors": [
     {
       "name": "Richard Miles",
-      "email": "RichardMiles@Stats.Coach"
+      "email": "Richard@Miles.Systems"
     }
   ],
 
@@ -28,7 +28,7 @@
   "require": {
     "php": "^7.1",
     "google/cloud": "^0.21",
-    "richardtmiles/carbonphp": "dev-carbon#02cf308b2ce1d7efa41b49bd4d5dc969d1df65c1",
+    "richardtmiles/carbonphp": "dev-carbon#5fbb5b088f8133e6e9a803f3495cef06b9727a0c",
     "google/apiclient": "^2.0",
     "facebook/graph-sdk": "^5.5"
   }

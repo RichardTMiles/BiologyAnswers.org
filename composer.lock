@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "e19613d94fb5d3a66b823ae3fcd4b43c",
+    "content-hash": "8cd9bf141c3118d301f6bd6e60990697",
     "packages": [
         {
             "name": "facebook/graph-sdk",
@@ -884,12 +884,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/RichardTMiles/CarbonPHP.git",
-                "reference": "02cf308b2ce1d7efa41b49bd4d5dc969d1df65c1"
+                "reference": "5fbb5b088f8133e6e9a803f3495cef06b9727a0c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/RichardTMiles/CarbonPHP/zipball/02cf308b2ce1d7efa41b49bd4d5dc969d1df65c1",
-                "reference": "02cf308b2ce1d7efa41b49bd4d5dc969d1df65c1",
+                "url": "https://api.github.com/repos/RichardTMiles/CarbonPHP/zipball/5fbb5b088f8133e6e9a803f3495cef06b9727a0c",
+                "reference": "5fbb5b088f8133e6e9a803f3495cef06b9727a0c",
                 "shasum": ""
             },
             "require": {
@@ -930,7 +930,7 @@
                 "pipes",
                 "sockets"
             ],
-            "time": "2018-07-31T05:02:58+00:00"
+            "time": "2018-08-05T02:50:53+00:00"
         },
         {
             "name": "rize/uri-template",

@@ -1,9 +1,86 @@
-<!DOCTYPE html>
-<html>
 <?php
-include_once SERVER_ROOT . APP_VIEW . 'Layout/Head.php';
 $logged_in = $_SESSION['id'] ?? false;
 ?>
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title><?= SITE_TITLE ?></title>
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+
+    <!-- PJAX Content Control -->
+    <meta http-equiv="x-pjax-version" content="<?= $_SESSION['X_PJAX_Version'] ?>">
+    <!-- Google -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-100885582-1"></script>
+
+    <script>
+        /*! loadJS: load a JS file asynchronously. [c]2014 @scottjehl, Filament Group, Inc. (Based on http://goo.gl/REQGQ by Paul Irish). Licensed MIT */
+        (function (w) {
+            let loadJS;
+            loadJS = function (src, cb) {
+                "use strict";
+                let ref = w.document.getElementsByTagName("script")[0];
+                let script = w.document.createElement("script");
+                script.src = src;
+                script.async = true;
+                ref.parentNode.insertBefore(script, ref);
+                if (cb && typeof(cb) === "function")
+                    script.onload = cb;
+
+                return script;
+            }; // commonjs
+            if (typeof module !== "undefined") module.exports = loadJS;
+            else w.loadJS = loadJS;
+        }(typeof global !== "undefined" ? global : this));// Hierarchical PJAX Request
+
+        <?php if (defined('FACEBOOK_APP_ID') && !empty(FACEBOOK_APP_ID)): ?>
+        // Facebook Analytics
+        window.fbAsyncInit = function () {
+            FB.init({
+                appId: '<?=FACEBOOK_APP_ID?>',
+                xfbml: true,
+                version: 'v2.11'
+            });
+            FB.AppEvents.logPageView();
+        };
+
+        (function (d, s, id) {
+            let js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) {
+                return;
+            }
+            js = d.createElement(s);
+            js.id = id;
+            js.src = "https://connect.facebook.net/en_US/sdk.js";
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+        <?php endif; ?>
+
+        // Document ready => jQuery => PJAX => CarbonPHP = loaded
+        function OneTimeEvent(ev, cb){
+            return document.addEventListener(ev, function fn(event) {
+                document.removeEventListener(ev, fn);
+                return cb(event);
+            });
+        }
+        function Carbon(cb) {return OneTimeEvent("Carbon", cb)}
+    </script>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <style>
+        .click a {
+            display: block;
+        }
+    </style>
+</head>
+
 <!-- Full Width Column -->
 <body class="hold-transition skin-green layout-top-nav">
 <div class="wrapper" style="background-color: rgba(0, 0, 0, 0.7)">
@@ -22,7 +99,7 @@ $logged_in = $_SESSION['id'] ?? false;
                 <!-- Collect the nav links, forms, and other content for toggling -->
                 <div class="collapse navbar-collapse pull-left" id="navbar-collapse">
                     <ul class="nav navbar-nav">
-                        <li class="active"><a href="<?= SITE ?>Chapters">Chapters <span class="sr-only">(current)</span></a>
+                        <li class="active"><a href="/Chapters">Chapters <span class="sr-only">(current)</span></a>
                         </li>
                     </ul>
                     <form class="navbar-form navbar-left" role="search">
@@ -89,7 +166,7 @@ $logged_in = $_SESSION['id'] ?? false;
     <footer class="main-footer bg-black" style="border-top: 0">
         <div class="container">
             <div class="pull-right hidden-xs">
-                <a href="<?= SITE ?>Privacy/">Privacy Policy</a> <b>Version</b> <?= SITE_VERSION ?>
+                <a href="/Privacy/">Privacy Policy</a> <b>Version</b> <?= SITE_VERSION ?>
             </div>
             <!--script type="text/javascript" src="https://cdn.ywxi.net/js/1.js" async></script-->
         </div>
@@ -143,8 +220,14 @@ $logged_in = $_SESSION['id'] ?? false;
 <script src="/node_modules/jquery-pjax/jquery.pjax.js"></script>
 <script src="/node_modules/mustache/mustache.js"></script>
 <script src="/vendor/richardtmiles/carbonphp/helpers/Carbon.js"></script>
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 
 <script>
+    (adsbygoogle = window.adsbygoogle || []).push({
+        google_ad_client: "ca-pub-7402031087678981",
+        enable_page_level_ads: true
+    });
+
     const TEMPLATE = '/node_modules/admin-lte/', APP_VIEW = '/Application/View/', COMPOSER = '/vendor/';
 
     const carbon = new CarbonPHP();
@@ -185,7 +268,7 @@ $logged_in = $_SESSION['id'] ?? false;
                             $('#my-box-widget').boxRefresh('load');
                         });
 
-                    $.load_backStretch('/Application/View/img/Carbon.png');
+                    $.load_backStretch('/Application/View/Img/Carbon.png');
                     $('.sidebar-menu').tree();
                 });
 
