@@ -13,7 +13,7 @@ You can check to see what versions you have installed by typing the folling into
 
 # N00BS
 
-I originally developed this website when I was 15, a freshman in highschool. At the time you couldn't send large files over text message or email, so to share my solutions to class members I googled how to create a website. I had a iBook G4 which came installed with iWeb, a super shitty website builder like wiks or something. It was discontinued. Since then, I decided to go to school for computer science. I can honestly say it is the most challenging and rewarding expecence I have ever undertaken and would reccommend it to anyone! I have yet to have kids or be married... But the bars been set high :P
+I originally developed this website when I was 15, a freshman in highschool. At the time you couldn't send large files over text message or email, so to share my solutions to class members I had to create a website. I had a iBook G4 which came installed with iWeb, a super shitty website builder like wiks or something. It was discontinued. Since then, I decided to go to school for computer science. I can honestly say it is the most challenging and rewarding expecence I have ever undertaken and would reccommend it to anyone! I have yet to have kids or be married... But the bars been set high :P
 
 If you find yourself scratching your head when reading these instructions feel free to DM me. They are written at a higher level to encourage the spirit of exploration and Google Fu. Knowlage is the only true source of power && Unless it sucks, don't reinvent the wheel. 
 
