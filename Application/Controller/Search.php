@@ -16,6 +16,6 @@ class Search extends Request
     public function search($search){
         global $json;
 
-        return $json['verify'] = $this->set($search)->value();
+        return $json['verify'] = $this->set($search)->noHTML(true);
     }
 }

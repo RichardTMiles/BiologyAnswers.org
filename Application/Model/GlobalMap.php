@@ -9,7 +9,7 @@
  * been working in PHP for many years now and as far as I can tell PHP
  * follows one pattern and one only. DO WHATEVER YOU WANT. Seriously, that
  * is, like, the whole goal of the language. If you attempt to follow other
- * practices based prior knowledge of other languages, then you probably
+ * practices based on prior knowledge of other languages, then you probably
  * don't know enough about PHP. For example, did you know that PHP arrays
  * are actually HASH TABLES. This means that it is far faster to store user data
  * in an array than an object by calling new. Moreover private methods and variables
@@ -50,9 +50,18 @@
  * @link http://carbonphp.com/
  */
 
+
+/**
+ *  A note for biology answers viewers: This class isn't used at all in this application.
+ *  I copy most my code between projects. This file had a nice rant in it.. It stayed..
+ *  Go look at Stats.Coach when you get a chance
+ */
+
+
+
 namespace Model;
 
-use CarbonPHP\Entities;           // /Data/Vendors/richardtmiles/carbonphp/Structure/Entities.php   <- that's deep..
+use CarbonPHP\Entities;           // /vendor/richardtmiles/carbonphp/Structure/Entities.php   <- that's deep..
 use CarbonPHP\Helpers\Pipe;       // <-- that's fun
 
 abstract class GlobalMap extends Entities
@@ -65,6 +74,7 @@ abstract class GlobalMap extends Entities
         global $user;
         $this->user = &$user;
     }
+
 
     public static function sendUpdate(string $id, string $uri){
         Pipe::send( $uri, SERVER_ROOT . 'Data/Temp/' . $id . '.fifo' );

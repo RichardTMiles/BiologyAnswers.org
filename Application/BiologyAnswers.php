@@ -64,7 +64,7 @@ class BiologyAnswers extends Application
 
     public function startApplication($uri = null): bool
     {
-        if ((AJAX || SOCKET) && $this->structure($this->events('#pjax-content'))->match('Search/{input}','Search', 'search')()) {
+        if ((AJAX || SOCKET) && $this->structure($this->events('#pjax-content'))->match('Search/{input?}','Search', 'search')()) {
             return true;
         }
 
