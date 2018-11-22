@@ -1,18 +1,17 @@
 {
   "name": "richardtmiles/c6",
   "description": "The best MVC framework",
-  "minimum-stability": "dev",
   "license": "MIT",
   "config": {
-    "vendor-dir": "Data/Vendors"
+    "vendor-dir": "vendor"
   },
   "autoload": {
     "psr-4": {
-      "View\\": "Application/View/",
-      "Controller\\": "Application/Controller/",
-      "Model\\": "Application/Model/",
-      "Tables\\": "Application/Tables/"
-
+      "App\\":"",
+      "View\\": "View/",
+      "Controller\\": "Controller/",
+      "Model\\": "Model/",
+      "Table\\": "Table/"
     }
   },
   "authors": [
@@ -21,16 +20,19 @@
       "email": "RichardMiles@Stats.Coach"
     }
   ],
-
+  "repositories": [
+    {
+      "type": "git",
+      "url": "https://github.com/RichardTMiles/CarbonPHP"
+    }
+  ],
   "require-dev": {
-    "richardtmiles/carbonphp": "dev-master",
+    "richardtmiles/carbonphp" : "dev-carbon#045fa43b240513c4fa6db1f7e518c35135bec4cb",
     "google/cloud-tools": "^0.6"
   },
 
   "require": {
-    "php": "7.1.*",
     "google/cloud": "^0.21",
-    "richardtmiles/carbonphp": "dev-master",
     "almasaeed2010/adminlte": "^2.4",
     "bower-asset/jquery-backstretch": "^2.1",
     "bower-asset/jquery-form": "dev-master",

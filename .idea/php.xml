@@ -3,39 +3,6 @@
   <component name="PhpIncludePathManager">
     <include_path>
       <path value="." />
-      <path value="$PROJECT_DIR$/Data/Vendors/symfony/browser-kit" />
-      <path value="$PROJECT_DIR$/Data/Vendors/almasaeed2010/adminlte" />
-      <path value="$PROJECT_DIR$/Data/Vendors/mustache/mustache" />
-      <path value="$PROJECT_DIR$/Data/Vendors/facebook/graph-sdk" />
-      <path value="$PROJECT_DIR$/Data/Vendors/richardtmiles/carbonphp" />
-      <path value="$PROJECT_DIR$/Data/Vendors/firebase/php-jwt" />
-      <path value="$PROJECT_DIR$/Data/Vendors/google/cloud" />
-      <path value="$PROJECT_DIR$/Data/Vendors/composer" />
-      <path value="$PROJECT_DIR$/Data/Vendors/google/apiclient" />
-      <path value="$PROJECT_DIR$/Data/Vendors/google/apiclient-services" />
-      <path value="$PROJECT_DIR$/Data/Vendors/phpseclib/phpseclib" />
-      <path value="$PROJECT_DIR$/Data/Vendors/monolog/monolog" />
-      <path value="$PROJECT_DIR$/Data/Vendors/psr/log" />
-      <path value="$PROJECT_DIR$/Data/Vendors/symfony/console" />
-      <path value="$PROJECT_DIR$/Data/Vendors/google/cloud-tools" />
-      <path value="$PROJECT_DIR$/Data/Vendors/bower-asset/jquery-backstretch" />
-      <path value="$PROJECT_DIR$/Data/Vendors/psr/http-message" />
-      <path value="$PROJECT_DIR$/Data/Vendors/psr/cache" />
-      <path value="$PROJECT_DIR$/Data/Vendors/google/auth" />
-      <path value="$PROJECT_DIR$/Data/Vendors/symfony/debug" />
-      <path value="$PROJECT_DIR$/Data/Vendors/twig/twig" />
-      <path value="$PROJECT_DIR$/Data/Vendors/guzzlehttp/guzzle" />
-      <path value="$PROJECT_DIR$/Data/Vendors/symfony/process" />
-      <path value="$PROJECT_DIR$/Data/Vendors/guzzlehttp/psr7" />
-      <path value="$PROJECT_DIR$/Data/Vendors/bower-asset/jquery" />
-      <path value="$PROJECT_DIR$/Data/Vendors/rize/uri-template" />
-      <path value="$PROJECT_DIR$/Data/Vendors/symfony/polyfill-mbstring" />
-      <path value="$PROJECT_DIR$/Data/Vendors/symfony/dom-crawler" />
-      <path value="$PROJECT_DIR$/Data/Vendors/symfony/filesystem" />
-      <path value="$PROJECT_DIR$/Data/Vendors/guzzlehttp/promises" />
-      <path value="$PROJECT_DIR$/Data/Vendors/bower-asset/mustache.js" />
-      <path value="$PROJECT_DIR$/Data/Vendors/bower-asset/jquery-pjax" />
-      <path value="$PROJECT_DIR$/Data/Vendors/bower-asset/jquery-form" />
     </include_path>
   </component>
   <component name="PhpProjectSharedConfiguration" php_language_level="7.1" />
