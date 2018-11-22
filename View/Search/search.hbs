@@ -1,0 +1,145 @@
+<section class="content-header" style="color: ghostwhite">
+    <h1>
+        Search
+    </h1>
+</section>
+
+<div class="col-xs-12" style="overflow-y:scroll">
+    <div class="box">
+        <div class="box-header">
+            <h3 class="box-title">Chapters</h3>
+        </div>
+        <!-- /.box-header -->
+        <div class="box-body">
+            <div id="example2_wrapper" class="dataTables_wrapper form-inline dt-bootstrap">
+                <div class="row">
+                    <div class="col-sm-6"></div>
+                    <div class="col-sm-6"></div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12">
+                        <table id="Chapter" class="table table-bordered table-hover">
+                            <thead>
+                            <tr role="row">
+                                <th>Chapter Number</th>
+                                <th>Chapter Title</th>
+                            </thead>
+                            <tfoot>
+                            <tr>
+                                <th>Chapter Number</th>
+                                <th>Chapter Title</th>
+                            </tr>
+                            </tfoot>
+
+                            <tbody>{{#Chapters}}
+                                <tr role="row" class="clickable-row" data-href="/Chapter/{{Number}}">
+                                    <th><a href="/Chapter/{{Number}}">{{Number}}</a></th>
+                                    <th><a href="/Chapter/{{Number}}">{{Title}}</a></th>
+                                </tr>{{/Chapters}}
+                            </tbody>
+
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /.box-body -->
+    </div>
+    <!-- /.box -->
+</div>
+
+<div class="col-xs-12" style="overflow-y:scroll">
+    <div class="box">
+        <div class="box-header">
+            <h3 class="box-title">Sections</h3>
+        </div>
+        <!-- /.box-header -->
+        <div class="box-body">
+            <div id="example2_wrapper" class="dataTables_wrapper form-inline dt-bootstrap">
+                <div class="row">
+                    <div class="col-sm-6"></div>
+                    <div class="col-sm-6"></div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12">
+                        <table id="Sections" class="table table-bordered table-hover">
+                            <thead>
+                            <tr role="row">
+                                <th>Chapter Number</th>
+                                <th>Section Number</th>
+                                <th>Section Title</th>
+                            </thead>
+                            <tfoot>
+                            <tr>
+                                <th>Chapter Number</th>
+                                <th>Section Number</th>
+                                <th>Section Title</th>
+                            </tr>
+                            </tfoot>
+                            <tbody>{{#Section}}
+                                <tr role="row" class="clickable-row" data-href="/Section/{{ChapNumber}}/{{SecNumber}}">
+                                    <td><a href="/Chapter/{{ChapNumber}}/">{{ChapNumber}}</a></td>
+                                    <td><a href="/Section/{{ChapNumber}}/{{SecNumber}}">{{SecNumber}}</a></td>
+                                    <td><a href="/Section/{{ChapNumber}}/{{SecNumber}}">{{SecTitle}}</a></td>
+                                </tr>{{/Section}}
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /.box-body -->
+    </div>
+    <!-- /.box -->
+</div>
+
+<div class="col-xs-12" style="overflow-y:scroll">
+    <div class="box">
+        <div class="box-header">
+            <h3 class="box-title">Questions</h3>
+        </div>
+        <!-- /.box-header -->
+        <div class="box-body">
+            <div id="example2_wrapper" class="dataTables_wrapper form-inline dt-bootstrap">
+                <div class="row">
+                    <div class="col-sm-6"></div>
+                    <div class="col-sm-6"></div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12">
+                        <table id="Questions" class="table table-bordered table-hover">
+                            <thead>
+                            <tr role="row">
+                                <th>Chapter Number</th>
+                                <th>Section Number</th>
+                                <th>Question Number</th>
+                                <th>Question</th>
+                            </thead>
+                            <tfoot>
+                            <tr>
+                                <th>Chapter Number</th>
+                                <th>Section Number</th>
+                                <th>Question Number</th>
+                                <th>Question</th>
+                            </tr>
+                            </tfoot>
+
+                            <tbody>{{#Question}}
+                                <tr role="row">
+                                    <td><a href="/Chapter/{{CNumb}}">{{CNumb}}</a></td>
+                                    <td><a href="/Section/{{CNumb}}/{{SNumb}}/">{{SNumb}}</td>
+                                    <td><a href="/Question/{{CNumb}}/{{SNumb}}/{{QNumb}}">{{QNumb}}</td>
+                                    <td><a href="/Question/{{CNumb}}/{{SNumb}}/{{QNumb}}">{{Q}}</td>
+                                </tr>{{/Question}}
+                            </tbody>
+
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /.box-body -->
+    </div>
+    <!-- /.box -->
+</div>
+
