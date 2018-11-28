@@ -27,17 +27,13 @@
     }
   ],
   "require-dev": {
-    "richardtmiles/carbonphp" : "dev-carbon#045fa43b240513c4fa6db1f7e518c35135bec4cb",
+    "richardtmiles/carbonphp" : "dev-master",
     "google/cloud-tools": "^0.6"
   },
 
   "require": {
     "google/cloud": "^0.21",
     "almasaeed2010/adminlte": "^2.4",
-    "bower-asset/jquery-backstretch": "^2.1",
-    "bower-asset/jquery-form": "dev-master",
-    "bower-asset/jquery-pjax": "dev-master",
-    "bower-asset/mustache.js": "dev-master",
     "google/apiclient": "^2.0",
     "facebook/graph-sdk": "^5.5",
     "mustache/mustache": "^2.12"

@@ -40,7 +40,7 @@ return [
 
         'CACHE_CONTROL' => [
             'ico|pdf|flv' => 'Cache-Control: max-age=29030400, public',
-            'jpg|jpeg|png|gif|swf|xml|txt|css|js|woff2|tff' => 'Cache-Control: max-age=604800, public',
+            'jpg|png|jpeg|png|gif|swf|xml|txt|css|js|woff2|tff' => 'Cache-Control: max-age=604800, public',
             'html|htm|php|hbs' => 'Cache-Control: max-age=0, private, public',
         ],
 
@@ -50,7 +50,7 @@ return [
 
         'TITLE' => 'Biology Answers • Prentice Hall',      // Website title
 
-        'VERSION' => '5.0.0',       // Add link to semantic versioning
+        'VERSION' => '5.1.0',       // Add link to semantic versioning
 
         'SEND_EMAIL' => 'no-reply@carbonphp.com',     // I send emails to validate accounts
 

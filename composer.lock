@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "51a787dfd675236e6e8874597a3f5d57",
+    "content-hash": "0e607620982ac0d259b6cca502187e2b",
     "packages": [
         {
             "name": "almasaeed2010/adminlte",
@@ -81,148 +81,6 @@
                 "library"
             ],
             "time": "2018-01-20T17:26:57+00:00"
-        },
-        {
-            "name": "bower-asset/jquery-backstretch",
-            "version": "2.1.16",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/jquery-backstretch/jquery-backstretch.git",
-                "reference": "392632201151feb1325c8807e7ee987af6aab6a1"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/jquery-backstretch/jquery-backstretch/zipball/392632201151feb1325c8807e7ee987af6aab6a1",
-                "reference": "392632201151feb1325c8807e7ee987af6aab6a1",
-                "shasum": ""
-            },
-            "require": {
-                "bower-asset/jquery": ">=1.9.0"
-            },
-            "type": "bower-asset-library",
-            "extra": {
-                "bower-asset-main": [
-                    "jquery.backstretch.js"
-                ],
-                "bower-asset-ignore": [
-                    "Gruntfile.js",
-                    "examples",
-                    "libs",
-                    "test",
-                    ".gitignore",
-                    "src"
-                ]
-            },
-            "description": "A simple jQuery plugin that allows you to add a dynamically-resized, slideshow-capable background image to any page or element.",
-            "time": "2017-06-22T16:27:38+00:00"
-        },
-        {
-            "name": "bower-asset/jquery-form",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/jquery-form/form.git",
-                "reference": "eec76fb92b20607712e33999898716d82e12bcb4"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/jquery-form/form/zipball/eec76fb92b20607712e33999898716d82e12bcb4",
-                "reference": "eec76fb92b20607712e33999898716d82e12bcb4",
-                "shasum": ""
-            },
-            "require": {
-                "bower-asset/jquery": ">=1.7.2"
-            },
-            "type": "bower-asset-library",
-            "extra": {
-                "bower-asset-main": "src/jquery.form.js",
-                "bower-asset-ignore": [
-                    "README.md",
-                    "composer.json",
-                    "package.json"
-                ]
-            },
-            "license": [
-                "(LGPL-2.1+ OR MIT)"
-            ],
-            "description": "The jQuery Form Plugin allows you to easily and unobtrusively upgrade HTML forms to use AJAX.",
-            "keywords": [
-                "ajax",
-                "form",
-                "html-form",
-                "jquery",
-                "jquery-form",
-                "jquery-plugin",
-                "json",
-                "json-form"
-            ],
-            "time": "2018-06-29T00:58:19+00:00"
-        },
-        {
-            "name": "bower-asset/jquery-pjax",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/defunkt/jquery-pjax.git",
-                "reference": "153262eda33e31119eabb97cd5f14365580a3b35"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/defunkt/jquery-pjax/zipball/153262eda33e31119eabb97cd5f14365580a3b35",
-                "reference": "153262eda33e31119eabb97cd5f14365580a3b35",
-                "shasum": ""
-            },
-            "require": {
-                "bower-asset/jquery": ">=1.8"
-            },
-            "type": "bower-asset-library",
-            "extra": {
-                "bower-asset-main": "./jquery.pjax.js",
-                "bower-asset-ignore": [
-                    ".travis.yml",
-                    "Gemfile",
-                    "Gemfile.lock",
-                    "CONTRIBUTING.md",
-                    "vendor/",
-                    "script/",
-                    "test/"
-                ]
-            },
-            "time": "2017-05-23T11:23:11+00:00"
-        },
-        {
-            "name": "bower-asset/mustache.js",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/janl/mustache.js.git",
-                "reference": "38b1448e65f1d4716c3e3ad792ae6ab3aaf487ab"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/janl/mustache.js/zipball/38b1448e65f1d4716c3e3ad792ae6ab3aaf487ab",
-                "reference": "38b1448e65f1d4716c3e3ad792ae6ab3aaf487ab",
-                "shasum": ""
-            },
-            "type": "bower-asset-library",
-            "extra": {
-                "bower-asset-main": "mustache.js",
-                "bower-asset-ignore": [
-                    "**/.*",
-                    "test"
-                ]
-            },
-            "license": [
-                "MIT"
-            ],
-            "description": "Logic-less {{mustache}} templates with JavaScript",
-            "keywords": [
-                "ejs",
-                "mustache",
-                "template",
-                "templates"
-            ],
-            "time": "2018-11-11T21:24:56+00:00"
         },
         {
             "name": "composer/installers",
@@ -1317,11 +1175,11 @@
         },
         {
             "name": "richardtmiles/carbonphp",
-            "version": "dev-carbon",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/RichardTMiles/CarbonPHP",
-                "reference": "045fa43b240513c4fa6db1f7e518c35135bec4cb"
+                "reference": "560fd4e71bf821b0cd74098dacea4db11ad90a66"
             },
             "require": {
                 "mustache/mustache": "v2.12.0",
@@ -1363,20 +1221,20 @@
                 "Pipes",
                 "Sockets"
             ],
-            "time": "2018-11-22T07:36:27+00:00"
+            "time": "2018-11-27T21:17:03+00:00"
         },
         {
             "name": "symfony/browser-kit",
-            "version": "v3.4.18",
+            "version": "v3.4.19",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/browser-kit.git",
-                "reference": "f6668d1a6182d5a8dec65a1c863a4c1d963816c0"
+                "reference": "49465af22d94c8d427c51facbf8137eb285b9726"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/browser-kit/zipball/f6668d1a6182d5a8dec65a1c863a4c1d963816c0",
-                "reference": "f6668d1a6182d5a8dec65a1c863a4c1d963816c0",
+                "url": "https://api.github.com/repos/symfony/browser-kit/zipball/49465af22d94c8d427c51facbf8137eb285b9726",
+                "reference": "49465af22d94c8d427c51facbf8137eb285b9726",
                 "shasum": ""
             },
             "require": {
@@ -1420,20 +1278,20 @@
             ],
             "description": "Symfony BrowserKit Component",
             "homepage": "https://symfony.com",
-            "time": "2018-07-26T09:06:28+00:00"
+            "time": "2018-11-26T10:17:44+00:00"
         },
         {
             "name": "symfony/console",
-            "version": "v3.4.18",
+            "version": "v3.4.19",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/console.git",
-                "reference": "1d228fb4602047d7b26a0554e0d3efd567da5803"
+                "reference": "8f80fc39bbc3b7c47ee54ba7aa2653521ace94bb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/console/zipball/1d228fb4602047d7b26a0554e0d3efd567da5803",
-                "reference": "1d228fb4602047d7b26a0554e0d3efd567da5803",
+                "url": "https://api.github.com/repos/symfony/console/zipball/8f80fc39bbc3b7c47ee54ba7aa2653521ace94bb",
+                "reference": "8f80fc39bbc3b7c47ee54ba7aa2653521ace94bb",
                 "shasum": ""
             },
             "require": {
@@ -1489,20 +1347,20 @@
             ],
             "description": "Symfony Console Component",
             "homepage": "https://symfony.com",
-            "time": "2018-10-30T16:50:50+00:00"
+            "time": "2018-11-26T12:48:07+00:00"
         },
         {
             "name": "symfony/debug",
-            "version": "v4.1.7",
+            "version": "v4.1.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/debug.git",
-                "reference": "19090917b848a799cbae4800abf740fe4eb71c1d"
+                "reference": "f9eea0cff99d14f97d69b24b17164098ece3fd32"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/debug/zipball/19090917b848a799cbae4800abf740fe4eb71c1d",
-                "reference": "19090917b848a799cbae4800abf740fe4eb71c1d",
+                "url": "https://api.github.com/repos/symfony/debug/zipball/f9eea0cff99d14f97d69b24b17164098ece3fd32",
+                "reference": "f9eea0cff99d14f97d69b24b17164098ece3fd32",
                 "shasum": ""
             },
             "require": {
@@ -1545,20 +1403,20 @@
             ],
             "description": "Symfony Debug Component",
             "homepage": "https://symfony.com",
-            "time": "2018-10-31T09:09:42+00:00"
+            "time": "2018-11-11T19:51:29+00:00"
         },
         {
             "name": "symfony/dom-crawler",
-            "version": "v4.1.7",
+            "version": "v4.1.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/dom-crawler.git",
-                "reference": "80e60271bb288de2a2259662cff125cff4f93f95"
+                "reference": "a9f533524dcc3970a2c06ee1ec0bba35d3f5910e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/dom-crawler/zipball/80e60271bb288de2a2259662cff125cff4f93f95",
-                "reference": "80e60271bb288de2a2259662cff125cff4f93f95",
+                "url": "https://api.github.com/repos/symfony/dom-crawler/zipball/a9f533524dcc3970a2c06ee1ec0bba35d3f5910e",
+                "reference": "a9f533524dcc3970a2c06ee1ec0bba35d3f5910e",
                 "shasum": ""
             },
             "require": {
@@ -1602,20 +1460,20 @@
             ],
             "description": "Symfony DomCrawler Component",
             "homepage": "https://symfony.com",
-            "time": "2018-10-02T12:40:59+00:00"
+            "time": "2018-11-26T10:26:29+00:00"
         },
         {
             "name": "symfony/filesystem",
-            "version": "v3.4.18",
+            "version": "v3.4.19",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/filesystem.git",
-                "reference": "d69930fc337d767607267d57c20a7403d0a822a4"
+                "reference": "b49b1ca166bd109900e6a1683d9bb1115727ef2d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/filesystem/zipball/d69930fc337d767607267d57c20a7403d0a822a4",
-                "reference": "d69930fc337d767607267d57c20a7403d0a822a4",
+                "url": "https://api.github.com/repos/symfony/filesystem/zipball/b49b1ca166bd109900e6a1683d9bb1115727ef2d",
+                "reference": "b49b1ca166bd109900e6a1683d9bb1115727ef2d",
                 "shasum": ""
             },
             "require": {
@@ -1652,7 +1510,7 @@
             ],
             "description": "Symfony Filesystem Component",
             "homepage": "https://symfony.com",
-            "time": "2018-10-02T12:28:39+00:00"
+            "time": "2018-11-11T19:48:54+00:00"
         },
         {
             "name": "symfony/polyfill-ctype",
@@ -1773,16 +1631,16 @@
         },
         {
             "name": "symfony/process",
-            "version": "v3.4.18",
+            "version": "v3.4.19",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/process.git",
-                "reference": "35c2914a9f50519bd207164c353ae4d59182c2cb"
+                "reference": "abb46b909dd6ba0b50e10d4c10ffe6ee96dd70f2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/process/zipball/35c2914a9f50519bd207164c353ae4d59182c2cb",
-                "reference": "35c2914a9f50519bd207164c353ae4d59182c2cb",
+                "url": "https://api.github.com/repos/symfony/process/zipball/abb46b909dd6ba0b50e10d4c10ffe6ee96dd70f2",
+                "reference": "abb46b909dd6ba0b50e10d4c10ffe6ee96dd70f2",
                 "shasum": ""
             },
             "require": {
@@ -1818,7 +1676,7 @@
             ],
             "description": "Symfony Process Component",
             "homepage": "https://symfony.com",
-            "time": "2018-10-14T17:33:21+00:00"
+            "time": "2018-11-20T16:10:26+00:00"
         },
         {
             "name": "twig/twig",
@@ -1891,9 +1749,6 @@
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
-        "bower-asset/jquery-form": 20,
-        "bower-asset/jquery-pjax": 20,
-        "bower-asset/mustache.js": 20,
         "richardtmiles/carbonphp": 20
     },
     "prefer-stable": false,

@@ -1,4 +1,5 @@
 <?php
+//print 'We\'ll be up tonight' and die;
 #phpinfo() and exit;
 
 const DS = DIRECTORY_SEPARATOR; // All folder constants end in a trailing slash /
@@ -11,8 +12,12 @@ if (false === (include SERVER_ROOT . 'vendor' . DS . 'autoload.php')) {     // L
     print '<h1>Loading Composer Failed. See Carbonphp.com for documentation.</h1>' and die;     // Composer autoload
 }
 
-$app = new CarbonPHP\CarbonPHP('Config/Config.php');
-
+try {
+    $app = new CarbonPHP\CarbonPHP('Config/Config.php');
+} catch (Throwable $e) {
+    print '<b>OOOH Damn.</b><br><h1>Shit just really broke.</h1>';
+    print_r($e);
+}
 
 /** At one point I returned the invocation of $app to show that
  * the application will not exit on completion, but rather return

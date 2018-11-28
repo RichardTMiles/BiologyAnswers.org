@@ -11,10 +11,9 @@
 <script src="/vendor/richardtmiles/carbonphp/helpers/asynchronous.js"></script>
 
 <script>
-    const TEMPLATE = "/node_modules/admin-lte/", APP_VIEW = "/view/", COMPOSER = "/vendor/";
+    const TEMPLATE = "/node_modules/admin-lte/", APP_VIEW = "/View/", COMPOSER = "/vendor/";
 
     const carbon = new CarbonPHP('#pjax-content', 'wss://rootprerogative.com:8888/', false);
-
 
     carbon.event("Carbon");
 
