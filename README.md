@@ -1,6 +1,6 @@
 # Dependencies
 
-To Stand Up locally you'll need `PHP ^7.2`, `Node v10.8.0`, `git 2.13.5`, `MySQL Ver 14.14 Distrib 5.7.19`, and the latest version of `Composer 1.6.5` installed Globally. The above requirements are just what I currently have installed. I'm sure most version of Node, Composer, Git, and MySQL will work. PHP definitely need 7.1 and up. Please drop a pull request if I missed any ;)
+To Stand Up locally you'll need `PHP ^7.2`, `Node v10.8.0`, `git 2.13.5`, `MySQL Ver 14.14 Distrib 5.7.19`, and the latest version of `Composer 1.6.5` installed Globally. The above requirements are just what I currently have installed. I'm sure most version of Node, Composer, Git, and MySQL will work. PHP definitely needs 7.1 and up. Please drop a pull request if I missed any ;)
 
 It is worth noting that all of these programs listed are written for Mac and Windows; moreover, you can run this repository on Windows (instructions coming soonish)! 
 
