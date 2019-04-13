@@ -2,6 +2,8 @@
   "name": "richardtmiles/c6",
   "description": "The best MVC framework",
   "license": "MIT",
+  "minimum-stability": "dev",
+  "prefer-stable": true,
   "config": {
     "vendor-dir": "vendor"
   },
@@ -28,7 +30,7 @@
   "require": {
     "php": "^7.1",
     "google/cloud": "^0.21",
-    "richardtmiles/carbonphp": "dev-carbon#5fbb5b088f8133e6e9a803f3495cef06b9727a0c",
+    "richardtmiles/carbonphp": "dev-Reacting#e2694e284e9ad20c709f19cd764d48694f12f770-dev",
     "google/apiclient": "^2.0",
     "facebook/graph-sdk": "^5.5"
   }
