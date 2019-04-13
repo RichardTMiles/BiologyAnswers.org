@@ -27,7 +27,7 @@ class Biology extends GlobalMap
         }
     }
 
-    public function chapter(int $number): void
+    public function chapter($number): void
     {
         global $sections;
 

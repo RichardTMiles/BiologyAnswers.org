@@ -17,7 +17,7 @@ return [
 
         'DB_USER' => 'root',                // User
 
-        'DB_PASS' => 'goldteamrules',          // Password
+        'DB_PASS' => 'Huskies!99',          // Password
 
         'DB_BUILD' => SERVER_ROOT . 'Application/Config/buildDatabase.php',
 

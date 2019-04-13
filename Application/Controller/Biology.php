@@ -25,11 +25,11 @@ class Biology extends Request
      * @return bool
      * @throws PublicAlert
      */
-    public function chapter($number) : bool {
-
+    public function chapter($number) {
         if (!$number = $this->set($number)->int()) {
             throw new PublicAlert('The chapter you selected appears invalid');
         }
+
         return $number;
     }
 
