@@ -13,22 +13,25 @@ const TEMPLATE = COMPOSER . 'almasaeed2010' . DS . 'adminlte' . DS;
 return [
     'DATABASE' => [   // 104.155.134.136
 
-        'DB_DSN' => APP_LOCAL ? 'mysql:host=127.0.0.1;dbname=BiologyAnswers;' : 'mysql:host=35.224.229.250;dbname=BiologyAnswers;',      // Host and Database get put here
+        'DB_HOST' => APP_LOCAL ? '127.0.0.1' : '35.224.229.250',      // Host and Database get put here # APP_LOCAL ? '127.0.0.1' :
+
+        'DB_NAME' => 'BiologyAnswers',
 
         'DB_USER' => 'root',                // User
 
-        'DB_PASS' => 'Huskies!99',          // Password
+        'DB_PASS' =>  APP_LOCAL ? 'password' : 'goldteamrules',      // Password goldteamrules # APP_LOCAL ? 'password' :
 
-        'DB_BUILD' => SERVER_ROOT . 'Application/Config/buildDatabase.php',
+        'DB_BUILD' => SERVER_ROOT . '/config/buildDatabase.php',
 
-        'REBUILD' => false                       // Initial Setup todo - remove this check
+        'REBUILD' => false
+
     ],
 
 
     'VIEW' => [
         'VIEW' => 'Application/View/',  // This is where the MVC() function will map the HTML.PHP and HTML.HBS . See Carbonphp.com/mvc
 
-        'WRAPPER' => 'Biology/Wrapper.php',     // View::content() will produce this
+        'WRAPPER' => 'biology/wrapper.php',     // View::content() will produce this
     ],
 
     'SITE' => [

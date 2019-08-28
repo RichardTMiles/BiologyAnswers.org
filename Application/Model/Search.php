@@ -3,9 +3,10 @@
 namespace Model;
 
 
+use CarbonPHP\Database;
 use CarbonPHP\Error\PublicAlert;
 
-class Search extends GlobalMap
+class Search extends Database
 {
     /**
      * @param $search
@@ -16,11 +17,13 @@ class Search extends GlobalMap
     {
         global $result, $json;
 
+        $db = self::database();
+
         $json['widget'] = '#pjax-content';
 
         ######################### Team Search
         $sql = 'SELECT ChapterNumber AS Number, ChapterTitle AS Title FROM Chapters WHERE Chapters.ChapterNumber LIKE :search OR Chapters.ChapterTitle LIKE :search LIMIT 5';
-        $stmt = $this->db->prepare($sql);
+        $stmt = $db->prepare($sql);
         $stmt->bindValue(':search', "%$search%");
 
         if (!$stmt->execute()) {
@@ -29,12 +32,15 @@ class Search extends GlobalMap
 
         $result['Chapters'] = $stmt->fetchAll();
 
+
+
+
         if (array_key_exists('team_id', $result)) {
             $result = [$result];
         }
 
         $sql = 'SELECT ChapterNumber AS ChapNumber, SectionTitle AS SecTitle, SectionNumber AS SecNumber FROM Sections WHERE Sections.ChapterNumber LIKE :search OR Sections.SectionTitle LIKE :search OR SectionNumber LIKE :search LIMIT 5';
-        $stmt = $this->db->prepare($sql);
+        $stmt = $db->prepare($sql);
         $stmt->bindValue(':search', "%$search%");
 
         if (!$stmt->execute()) {
@@ -45,7 +51,7 @@ class Search extends GlobalMap
 
         ######################## Course Search
         $sql = 'SELECT ChapterNumber AS CNumb, SectionNumber AS SNumb, QuestionNumber AS QNumb, Question AS Q FROM Questions WHERE Question LIKE :search LIMIT 5';
-        $stmt = $this->db->prepare($sql);
+        $stmt = $db->prepare($sql);
 
         $stmt->bindValue(':search', "%$search%");
 

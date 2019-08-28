@@ -3,21 +3,13 @@
 namespace App;
 
 use CarbonPHP\Application;
-use CarbonPHP\View;
-
+use CarbonPHP\Error\PublicAlert;
 
 class BiologyAnswers extends Application
 {
     public function defaultRoute() : bool  // Sockets will not execute this
     {
-        return $this->wrap()('Biology/Home.php');  // don't change how wrap works, I know it looks funny
-    }
-
-    public function wrap() : callable
-    {
-        return function (string $file) : bool {
-            return View::content(APP_VIEW . $file);
-        };
+        return $this->wrap()('biology/home.php');  // don't change how wrap works, I know it looks funny
     }
 
     public function search()
@@ -27,7 +19,7 @@ class BiologyAnswers extends Application
 
             $json['Argv'] = $argv;
 
-            $argv = CM($class, $method, $argv)();
+            $argv = self::CM($class, $method, $argv)();
 
             if (!file_exists(SERVER_ROOT . $file = (APP_VIEW . $class . DS . $method . '.hbs'))) {
                 $alert = 'Mustache Template Not Found ' . $file;
@@ -55,16 +47,15 @@ class BiologyAnswers extends Application
         };
     }
 
-    public function MVC() : callable
-    {
-        return function (string $class, string $method, array &$argv = []) {
-            return MVC($class, $method, $argv);         // So I can throw in ->structure($route->MVC())-> anywhere
-        };
-    }
 
-    public function startApplication($uri = null): bool
+    /**
+     * @param string $uri
+     * @return bool
+     * @throws PublicAlert
+     */
+    public function startApplication(string $uri): bool
     {
-        if ((AJAX || SOCKET) && $this->structure($this->events('#pjax-content'))->match('Search/{input?}','Search', 'search')()) {
+        if ((AJAX || SOCKET) && $this->structure($this->search())->match('Search/{input?}','Search', 'search')()) {
             return true;
         }
 

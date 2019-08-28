@@ -30,9 +30,10 @@
   "require": {
     "php": "^7.1",
     "google/cloud": "^0.21",
-    "richardtmiles/carbonphp": "dev-Reacting#e2694e284e9ad20c709f19cd764d48694f12f770-dev",
+    "richardtmiles/carbonphp": "dev-StatsCoach#590d33f73b5d940b382de14b8f757c3febb157d4-dev",
     "google/apiclient": "^2.0",
-    "facebook/graph-sdk": "^5.5"
+    "facebook/graph-sdk": "^5.5",
+    "ext-json": "*"
   }
 
 }

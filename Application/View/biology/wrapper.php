@@ -82,14 +82,14 @@ $logged_in = $_SESSION['id'] ?? false;
 </head>
 
 <!-- Full Width Column -->
-<body class="hold-transition skin-green layout-top-nav">
+<body class="hold-transition skin-green layout-top-nav" style="height: auto; min-height: 1086px; background-color: transparent; ">
 <div class="wrapper" style="background-color: rgba(0, 0, 0, 0.7)">
 
     <header class="main-header">
         <nav class="navbar navbar-static-top">
             <div class="container">
                 <div class="navbar-header">
-                    <a href="<?= SITE ?>" class="navbar-brand" id="mytitle"><b>Biology</b>Answers.org</a>
+                    <a href="/" class="navbar-brand" id="mytitle"><b>Biology</b>Answers.org</a>
                     <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
                             data-target="#navbar-collapse">
                         <i class="fa fa-bars"></i>
@@ -103,13 +103,15 @@ $logged_in = $_SESSION['id'] ?? false;
                             <a href="https://github.com/RichardTMiles/BiologyAnswers.org" target="_blank">Source Code<span class="sr-only">(current)</span></a>
                         </li>
                     </ul>
-                    <form class="navbar-form navbar-left" role="search">
+                    <form class="navbar-form navbar-left" onsubmit="return false;" role="search">
                         <div class="form-group">
-                            <input onkeyup="this.value.length && carbon.start('/Search/' + this.value)" type="text"
+                            <input type="text"
                                    class="form-control"
                                    id="navbar-search-input" placeholder="Search" name="Search">
                         </div>
                     </form>
+
+
                 </div>
                 <!-- /.navbar-collapse -->
                 <!-- Navbar Right Menu -->
@@ -129,26 +131,24 @@ $logged_in = $_SESSION['id'] ?? false;
     </header>
     <script>
         Carbon(() => {
+            // pjax error on search every letter, so created a buffer to wait.
+            //setup before functions
+            let typingTimer;                //timer identifier
+            let doneTypingInterval = 500;  //time in ms (half second)
+            const $search = $('#navbar-search-input');
 
-            let $menu = $('li');
-
-            let activity = function () {
-                $("li a").filter(function () {
-                    $menu.removeClass('active');
-                    return this.href === location.href.replace(/#.*/, "");
-                }).parent().addClass("active");
-            };
-
-            activity();
-
-            $menu.click(function () {
-                $menu.removeClass('active');
-                $(this).addClass('active');
+            //on keyup, start the countdown
+            $search.keyup(function(){
+                clearTimeout(typingTimer);
+                if ($search.val()) {
+                    typingTimer = setTimeout(doneTyping, doneTypingInterval);
+                }
             });
 
-            $('#mytitle').click(function () {
-                $menu.removeClass('active');
-            });
+            //user is "finished typing," do something
+            function doneTyping () {
+                carbon.start('/Search/' + $search.val())
+            }
         })
     </script>
     <!-- Content Wrapper. Contains page content -->

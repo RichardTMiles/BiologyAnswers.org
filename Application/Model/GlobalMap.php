@@ -61,23 +61,16 @@
 
 namespace Model;
 
-use CarbonPHP\Entities;           // /vendor/richardtmiles/carbonphp/Structure/Entities.php   <- that's deep..
-use CarbonPHP\Helpers\Pipe;       // <-- that's fun
+use CarbonPHP\Database;
 
-abstract class GlobalMap extends Entities
+abstract class GlobalMap extends Database
 {
     protected $user = array();
     
     public function __construct()
     {
-        parent::__construct();
         global $user;
         $this->user = &$user;
-    }
-
-
-    public static function sendUpdate(string $id, string $uri){
-        Pipe::send( $uri, SERVER_ROOT . 'Data/Temp/' . $id . '.fifo' );
     }
 
 }
