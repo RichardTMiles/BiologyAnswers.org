@@ -65,7 +65,7 @@ INSERT INTO BiologyAnswers.Sections (ChapterNumber, SectionNumber, SectionTitle)
 INSERT INTO BiologyAnswers.Sections (ChapterNumber, SectionNumber, SectionTitle) VALUES (21, 3, 'Section 21–3 Ecology of Fungi (pages 537–542)');
 INSERT INTO BiologyAnswers.Sections (ChapterNumber, SectionNumber, SectionTitle) VALUES (21, 2, 'Section 21–2 Classification of Fungi (pages 530–536)');
 INSERT INTO BiologyAnswers.Sections (ChapterNumber, SectionNumber, SectionTitle) VALUES (21, 1, 'Section 21–1 The Kingdom Fungi (pages 527–529)');
-INSERT INTO BiologyAnswers.Sections (ChapterNumber, SectionNumber, SectionTitle) VALUES (21, 1, 'Section 22–1 Introduction to Plants (pages 551–555)');
+INSERT INTO BiologyAnswers.Sections (ChapterNumber, SectionNumber, SectionTitle) VALUES (22, 1, 'Section 22–1 Introduction to Plants (pages 551–555)');
 INSERT INTO BiologyAnswers.Sections (ChapterNumber, SectionNumber, SectionTitle) VALUES (20, 3, 'Section 20–3 Plantlike Protists: Unicellular Algae (pages 506–509)');
 INSERT INTO BiologyAnswers.Sections (ChapterNumber, SectionNumber, SectionTitle) VALUES (20, 2, 'Section 20–2 Animallike Protists: Protozoans (pages 499–505)');
 INSERT INTO BiologyAnswers.Sections (ChapterNumber, SectionNumber, SectionTitle) VALUES (20, 1, 'Section 20–1 The Kingdom Protista (pages 497–498)');

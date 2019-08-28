@@ -13,7 +13,6 @@ $logged_in = $_SESSION['id'] ?? false;
     <!-- PJAX Content Control -->
     <meta http-equiv="x-pjax-version" content="<?= $_SESSION['X_PJAX_Version'] ?>">
     <!-- Google -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-100885582-1"></script>
 
     <script>
         /*! loadJS: load a JS file asynchronously. [c]2014 @scottjehl, Filament Group, Inc. (Based on http://goo.gl/REQGQ by Paul Irish). Licensed MIT */
@@ -82,7 +81,7 @@ $logged_in = $_SESSION['id'] ?? false;
 </head>
 
 <!-- Full Width Column -->
-<body class="hold-transition skin-green layout-top-nav" style="height: auto; min-height: 1086px; background-color: transparent; ">
+<body class="hold-transition skin-green layout-top-nav" style="height: auto;  background-color: transparent; ">
 <div class="wrapper" style="background-color: rgba(0, 0, 0, 0.7)">
 
     <header class="main-header">
@@ -157,7 +156,7 @@ $logged_in = $_SESSION['id'] ?? false;
         <div id="alert"></div>
         <!-- content -->
         <div class="col-md-offset-1 col-md-10">
-            <div id="pjax-content">
+            <div id="pjax-content" style="min-height: 1036px;">
                 <?= \CarbonPHP\View::$bufferedContent ?? '' ?>
             </div>
         </div>
@@ -216,22 +215,19 @@ $logged_in = $_SESSION['id'] ?? false;
     //-- AJAX Pace -->
     carbon.js('/node_modules/admin-lte/bower_components/PACE/pace.js', () => $(document).ajaxStart(() => Pace.restart()));
 
-
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    window.dataLayer = window.dataLayer || [];
-
-    function gtag() {
-        dataLayer.push(arguments);
-    }
-
-    gtag('js', new Date());
-
-    gtag('config', 'UA-100885582-1');
 </script>
 <noscript id="deferred-styles">
     <!-- REQUIRED STYLE SHEETS -->
     <!-- Bootstrap 3.3.6 -->
     <link rel="stylesheet" type="text/css" href="/Application/View/Layout/style.css">
 </noscript>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-90672794-1"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-90672794-1');
+</script>
 </body>
 </html>
