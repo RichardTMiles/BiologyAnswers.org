@@ -5,7 +5,7 @@
             <a href="https://github.com/RichardTMiles">
             <p>We are committed to student success, developing leaders, and encouraging lifelong
                 wellness.</p>
-                <small>The <cite title="Source Title">lil'Rich && Team</cite></small>
+                <cite title="Source Title"><a target="_blank" href="https://www.instagram.com/wookieetyler/">ig @WookieeTyler</a></cite>
             </a>
         </blockquote>
     </a>

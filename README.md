@@ -39,7 +39,7 @@ If you find yourself scratching your head when reading these instructions feel f
         composer install
         npm install
 
-7) You will need to edit the "/Application/Config/Config.php" for you MySQL database credentials. The scheme can be left set to 'BiologyAnswers', as it will be created and populated for you if not existing. This is all managed with CarbonPHP, a php framework I built for hella speed, installed with composer. 
+7) You will need to edit the "/Application/Config/Config.php" for you MySQL database credentials. The scheme can be left set to 'BiologyAnswers', as it will be created and populated for you if not existing. This is all managed with CarbonPHP, a php framework I built for dev speed, installed with composer. 
         
         'DB_USER' => 'root',                
         'DB_PASS' => ''
@@ -50,7 +50,7 @@ If you find yourself scratching your head when reading these instructions feel f
 
 9) Goto http://localhost:1777/ in your browser to see the gold.
 
-10) Start this repo!
+10) Star this repo!
 
 
 # Check Out My Other Projects 
