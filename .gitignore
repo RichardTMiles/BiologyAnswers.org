@@ -14,3 +14,5 @@ gen
 Application/.DS_Store
 Application/Config/Config.php
 Application/View/.DS_Store
+node_modules
+vendor
